@@ -40,7 +40,7 @@ const Recognised = () => {
 
           <div className="py-[5px]">
             <Image
-              src="/centre-for-research/img01.png"
+              src="/school-of-engg-tech/bba-general/img1.webp"
               width={700}
               height={450}
               alt="Students collaborating on a project"
