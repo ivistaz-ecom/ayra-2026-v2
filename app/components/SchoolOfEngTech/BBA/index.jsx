@@ -7,6 +7,9 @@ import Scrolling from "./Scrolling"
 import Holistic from "./Holistic"
 import Carousel from "./Carousel"
 import Accordion from "./Accordion"
+import Specialization from "./Specialization"
+import Ayraadapt from "./Ayraadapt"
+import Career from "./Career"
 const index = () => {
   return (
     <>
@@ -16,9 +19,11 @@ const index = () => {
       <Different />
       <Scrolling />
       <Holistic />
-      <Carousel/>
-      <Accordion/>
-
+      <Carousel />
+      <Accordion />
+      <Specialization />
+      <Ayraadapt />
+      <Career />
     </>
   )
 }

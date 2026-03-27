@@ -14,7 +14,7 @@ const SemesterColumn = ({ title, items, showItems }) => {
           {items.map((item) => (
             <li
               key={item}
-              className="py-2 text-white/90 font-tthoves-light text-[11px] md:text-[13px] leading-tight"
+              className="py-2 text-white/90 font-tthoves-light text-[11px] md:text-[16px] leading-tight"
             >
               <span className="whitespace-pre-line block">{item}</span>
             </li>
@@ -78,19 +78,21 @@ const YearBlock = ({
 
       {/* Mobile: show both semesters stacked (no extra accordion) */}
       <div className="md:hidden py-6">
-        <div className="font-schabo text-white/20 text-[56px] leading-[0.85]">
-          {yearLabel}
+        <div className="px-4">
+          <div className="font-schabo text-white/20 text-[56px] leading-[0.85]">
+            {yearLabel}
+          </div>
+          {isOpen ? (
+            <>
+              <div className="mt-2 font-schabo uppercase text-white text-[24px] leading-[1]">
+                {phaseLabel}
+              </div>
+              <p className="mt-3 font-tthoves-light text-white/75 text-[13px] leading-relaxed">
+                {phaseNote}
+              </p>
+            </>
+          ) : null}
         </div>
-        {isOpen ? (
-          <>
-            <div className="mt-2 font-schabo uppercase text-white text-[24px] leading-[1]">
-              {phaseLabel}
-            </div>
-            <p className="mt-3 font-tthoves-light text-white/75 text-[13px] leading-relaxed">
-              {phaseNote}
-            </p>
-          </>
-        ) : null}
 
         <div className="mt-5">
           <SemesterColumn
@@ -225,24 +227,48 @@ const Accordion = () => {
 
   return (
     <section className="w-full bg-[#0072C5] py-10 md:py-16">
-      <div className="w-full max-w-[980px] mx-auto  md:px-0">
-        <div className="border border-dashed border-white/35 divide-y divide-dashed divide-white/35">
+      <div className="w-full max-w-[980px] mx-auto px-4 md:px-8">
+        <div className="grid md:grid-cols-[280px_1fr] gap-8 md:gap-20 items-start mb-10 md:mb-14">
+          <h2 className="font-schabo uppercase text-[#67D2FF] leading-[0.9] text-[64px] md:text-[86px] lg:text-[100px]">
+            DESIGNED
+            <br />
+            FOR YOU
+          </h2>
+
+          <div className="pt-2 md:pt-4">
+            <p className="font-tthoves-light text-white text-[14px] md:text-[18px] leading-relaxed max-w-[720px]">
+              At AYRA, learning moves from foundational understanding to deeper
+              exploration and applied experiences, giving students that space to
+              grow into concepts rather than rush through them.
+            </p>
+            <p className="mt-4 md:mt-6 font-tthoves-light text-white text-[14px] md:text-[18px] leading-relaxed max-w-[720px]">
+              The curriculum is organised across multiple semesters/terms,
+              progressing from foundational concepts to advanced and applied
+              learning.
+            </p>
+          </div>
+        </div>
+
+      <div className="w-full md:max-w-[980px] md:mx-auto border border-dashed border-white/35 ">
+        <div className=" divide-y divide-dashed divide-white/35 ">
           {YEARS.map((year, idx) => {
             const isOpen = openYearIndex === idx
             return (
-              <YearBlock
-                key={year.yearLabel}
-                yearIndex={idx}
-                yearLabel={year.yearLabel}
-                phaseLabel={year.phaseLabel}
-                phaseNote={year.phaseNote}
-                semesters={year.semesters}
-                isOpen={isOpen}
-                onToggle={() => setOpenYearIndex(idx)}
-              />
+              <div key={year.yearLabel}>
+                <YearBlock
+                  yearIndex={idx}
+                  yearLabel={year.yearLabel}
+                  phaseLabel={year.phaseLabel}
+                  phaseNote={year.phaseNote}
+                  semesters={year.semesters}
+                  isOpen={isOpen}
+                  onToggle={() => setOpenYearIndex(idx)}
+                />
+              </div>
             )
           })}
         </div>
+      </div>
       </div>
     </section>
   )
