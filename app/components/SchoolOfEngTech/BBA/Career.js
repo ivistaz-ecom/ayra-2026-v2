@@ -80,19 +80,21 @@ const Career = () => {
           </div>
         </div>
       </section>
-      <div className="bg-[#002561] py-10 md:py-14 border-t border-[#ffffff1f]">
+      <div className="bg-[#002561] py-10 lg:py-10 border-t border-[#ffffff1f]">
         <div className="container mx-auto px-2 md:px-0 text-center">
-          <h3 className="font-schabo uppercase text-[#1e77dc] text-[56px] leading-[0.9] md:text-[110px] md:leading-[0.85]">
-            Not sure where
-            <br />
-            to begin?
-          </h3>
+        <Image
+              src="/school-of-engg-tech/bba-general/img2.webp"
+              width={700}
+              height={450}
+              alt="Students collaborating on a project"
+              className="block lg:w-1/2 mx-auto"
+            />
         </div>
         <div className="mt-8 border-t border-dashed border-[#2a72b7] pt-5 text-center">
-          <p className="font-tthoves-demibold text-white text-[30px] leading-tight md:text-[42px]">
+          <p className="font-tthoves-demibold text-white text-[30px] leading-tight lg:text-[32px]">
             Give us five minutes on a call.
           </p>
-          <p className="mt-2 font-tthoves-light text-[#b4c8df] text-sm md:text-base">
+          <p className="mt-2 font-tthoves-light text-[#b4c8df] text-sm lg:text-lg">
             Speak with the admissions team, explore your options, and see what
             could fit you best.
           </p>

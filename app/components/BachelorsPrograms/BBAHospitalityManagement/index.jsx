@@ -8,10 +8,13 @@ import EngeneeingAtAyra from "./EngeneeingAtAyra"
 import Holistic from "./Holistic"
 import Carousel from "./Carousel"
 import Accordion from "./Accordion"
+// import Slider from "./Slider"
 import Specialization from "./Specialization"
 import Ayraadapt from "./Ayraadapt"
+import CareerAndProgressionOutcomes from "./CareerAndProgressionOutcomes"
 import Career from "./Career"
-const index = () => {
+
+const BBAHospitalityManagement = () => {
   return (
     <>
       <HeroBanner />
@@ -23,11 +26,13 @@ const index = () => {
       <Holistic />
       <Carousel />
       <Accordion />
+      {/* <Slider /> */}
       <Specialization />
-      <Ayraadapt />
       <Career />
+      <CareerAndProgressionOutcomes />
+      <Ayraadapt />
     </>
   )
 }
 
-export default index
+export default BBAHospitalityManagement

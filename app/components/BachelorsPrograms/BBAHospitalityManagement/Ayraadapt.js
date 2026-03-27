@@ -4,6 +4,7 @@ import { HoverButton5 } from "../../../utils/HoverButton";
 
 const Ayraadapt = () => {
   return (
+    <>
     <div className="py-5">
       <div className="mb-10">
         <div className="relative w-full container mx-auto my-4">
@@ -19,7 +20,7 @@ const Ayraadapt = () => {
           </div>
           <div className="lg:h-auto h-[25vh] w-full">
             <Image
-          src="/school-of-engg-tech/bba-general/img6.png"
+              src="/opencanvas/opc-play-footer.png"
               alt="Who Can Apply Background"
               fill
               className="lg:hidden object-cover bg-[#002560]"
@@ -48,6 +49,29 @@ const Ayraadapt = () => {
         </div>
       </div>
     </div>
+
+
+<div className="bg-[#002561] py-10 lg:py-10 border-t border-[#ffffff1f]">
+<div className="container mx-auto px-2 md:px-0 text-center">
+  <Image
+    src="/school-of-engg-tech/bba-general/img2.webp"
+    width={700}
+    height={450}
+    alt="Students collaborating on a project"
+    className="block lg:w-1/2 mx-auto"
+  />
+</div>
+<div className="mt-8 border-t border-dashed border-[#2a72b7] pt-5 text-center">
+  <p className="font-tthoves-demibold text-bl text-[30px] leading-tight lg:text-[32px] text-white">
+    Give us five minutes on a call.
+  </p>
+  <p className="mt-2 font-tthoves-light text-[#b4c8df] text-sm lg:text-lg">
+    Speak with the admissions team, explore your options, and see what
+    could fit you best.
+  </p>
+</div>
+</div>
+</>
   );
 };
 
