@@ -54,7 +54,7 @@ const Carousel = () => {
               >
                 <div className="h-full flex items-center justify-center">
                   <div className="h-full w-full border border-dashed border-[#B5B5B5] px-3 md:px-4 py-2 flex items-center justify-center">
-                    <p className="font-schabo text-[#0098FF] text-[13px] sm:text-[15px] md:text-[27px] leading-[1.08] text-left w-full">
+                  <p className="font-schabo text-[#0098FF] text-[13px] sm:text-[15px] md:text-[27px] leading-[1.08] text-center w-full">
                       {item.title}
                     </p>
                   </div>

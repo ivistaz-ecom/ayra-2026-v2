@@ -60,7 +60,7 @@ const Specialisations = () => {
               >
                 <div className="h-full flex items-center justify-center">
                   <div className="h-full w-full border border-dashed border-[#9BC8E7] bg-transparent px-4 sm:px-5 py-4 flex items-center justify-center">
-                    <h3 className="font-schabo text-[#744AC4] text-[23px] sm:text-[25px] md:text-[26px] lg:text-[28px] leading-[1.08] text-left w-full">
+                    <h3 className="font-schabo text-[#744AC4] text-[23px] sm:text-[25px] md:text-[26px] lg:text-[28px] leading-[1.08] text-center w-full">
                       {item.title}
                     </h3>
                   </div>

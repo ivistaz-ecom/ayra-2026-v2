@@ -18,7 +18,7 @@ const items = [
   { title: "Sports & Wellness" },
   { title: "Industry Integrated Learning" },
   { title: "Service and Field Learning" },
-  { title: "(LEAP - Learn | Engage | Apply | Progress)" },
+  { title: "(LEAP – Learn | Engage | Apply | Progress)" },
 ]
 
 const settings = {
