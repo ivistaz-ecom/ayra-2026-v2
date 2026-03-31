@@ -55,10 +55,10 @@ const Carousel = () => {
 
           <Slider {...settings}>
             {items.map((item) => (
-              <div key={item.title} className="px-2 ">
+              <div key={item.title} className="px-2  ">
                 <div className="h-full flex items-center justify-center">
                   <div className="border-2 border-dashed border-[#D6D6D6] bg-white/90 px-6 md:px-10 py-5 md:py-7 h-48 flex items-center justify-center">
-                    <div className="font-schabo text-[#FF4D48] text-[36px] md:text-[48px] leading-[1.05] text-center">
+                    <div className="font-schabo text-[#FFA300] text-[36px] md:text-[48px] leading-[1.05] text-center  flex items-center justify-center">
                       {item.title}
                     </div>
                   </div>

@@ -3,29 +3,29 @@
 import React, { useState } from "react"
 
 const careerRoles = [
-  "Visual Communication Designer",
-  "UI/UX Designer",
-  "Brand Strategist",
-  "Content Creator",
-  "Digital Marketing Specialist",
-  "Media Producer",
-  "Advertising Creative Professional",
+  "Sports Scientist",
+  "Strength and Conditioning Coach",
+  "Fitness and Performance Trainer",
+  "Sports Performance Analyst",
+  "Sports Nutrition Consultant",
+  "Athlete Development Specialist",
+  "Rehabilitation and Injury Prevention Specialist",
 ]
 
 const industries = [
-  "Advertising and Branding Agencies",
-  "Media and Communication Firms",
-  "Digital Marketing Companies",
-  "Design Studios and Creative Agencies",
-  "Content Production and Media Platforms",
-  "Corporate Communication and Marketing Departments",
+  "Professional Sports Teams and Academies",
+  "Fitness and Wellness Industry",
+  "Sports Performance Centers",
+  "Sports Analytics and Technology Firms",
+  "Health and Rehabilitation Centers",
+  "Educational and Research Institutions",
 ]
 
 const entrepreneurship = [
-  "Creative design studios",
-  "Branding and digital communication agencies",
-  "Content production platforms",
-  "Social media and digital marketing consultancies",
+  "Sports performance training centres",
+  "Fitness and wellness consulting services",
+  "Athlete conditioning programs",
+  "Sports analytics and performance consulting",
 ]
 
 const accordionItems = [
@@ -34,27 +34,27 @@ const accordionItems = [
   {
     title: "Entrepreneurship Opportunities",
     content: entrepreneurship,
-    prefix: "Graduates may also pursue entrepreneurial ventures such as:",
+    prefix: "Graduates may also establish ventures such as:",
   },
 ]
 
-const CareerAndProgressionOutcomes = () => {
+const 
+CareerAndProgressionOutcomes = () => {
   const [openIndex, setOpenIndex] = useState(0)
 
   return (
-    <section className="w-full bg-[#FF4D48] py-8 md:py-10">
+    <section className="w-full bg-[#FFA300] py-8 md:py-10">
       <div className="container mx-auto px-4 md:px-0">
         <div>
           <div className="p-6 md:p-8 border-b border-dashed border-white/35">
-            <h2 className="font-schabo uppercase text-[#FFB2B7] text-[52px] lg:text-[84px] leading-[0.95]">
+            <h2 className="font-schabo uppercase text-[#FFD87B] text-[52px] lg:text-[84px] leading-[0.95]">
               Career and
               <br />
               Progression Outcomes
             </h2>
 
             <p className="mt-4 font-tthoves-light text-white/90 text-sm md:text-base leading-relaxed">
-              Graduates of AYRA&apos;s BA Design program can pursue diverse
-              creative and communication-focused career pathways.
+              B.Sc. Sports Science graduates can pursue roles where movement, data, and wellbeing intersect—subject to local licensing and employer requirements.
             </p>
           </div>
 
@@ -104,7 +104,7 @@ const CareerAndProgressionOutcomes = () => {
 
             <div className="px-6 md:px-8 py-4 md:py-5">
               <p className="font-tthoves-light text-white/85 text-sm md:text-base leading-relaxed">
-              The program also provides a strong foundation for postgraduate studies in design, media studies, communication, branding, and creative industries.
+              The program also prepares students for higher education and research in sports science, exercise physiology, sports psychology, and related health sciences.
               </p>
             </div>
           </div>

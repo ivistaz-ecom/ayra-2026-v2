@@ -7,32 +7,23 @@ const Different = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 md:items-center">
           <div className="order-2 md:order-1 py-8 md:py-12 md:pr-10 lg:pr-14 md:border-r md:border-dashed md:border-[#8E8E8E] flex flex-col justify-center h-full">
             <p className="font-tthoves-light text-black text-base leading-relaxed max-w-[520px]">
-              At AYRA, design is not about following a fixed style.
+            At AYRA, sports science is not limited to theory.
             </p>
 
             <p className="font-tthoves-light text-black text-base leading-relaxed  max-w-[520px]">
-              You are encouraged to explore, experiment, and find your own
-              approach. Learning happens through making, testing, and refining
-              ideas, not just studying them.
-            </p>
+            You learn through practice, observation, and real environments, working with performance, training, and athlete development. At the same time, you are given the space to explore different aspects of the field before choosing your direction.</p>
 
             <p className="font-tthoves-light text-black text-base leading-relaxed  max-w-[520px]">
-              This allows you to build both creative confidence and clarity in
-              how you want to express your ideas.
-            </p>
-
-            <p className="font-tthoves-light text-black text-base leading-relaxed  max-w-[520px]">
-              The program connects creative exploration with practical work,
-              helping students build both artistic and strategic thinking.
+            This allows you to build both knowledge and confidence in where you want to take it.
             </p>
           </div>
 
           <div className="order-1 md:order-2 py-8 md:py-12 md:pl-10 lg:pl-14 flex items-center justify-center">
             <Image
-              src="/school-of-engg-tech/ba-design/img1.webp"
+                     src="/school-of-engg-tech/bsc-in-sport/img1.webp"
               width={700}
               height={450}
-              alt="Students collaborating on a project"
+              alt="Students in sports and movement learning"
               className="w-full h-auto "
             />
           </div>

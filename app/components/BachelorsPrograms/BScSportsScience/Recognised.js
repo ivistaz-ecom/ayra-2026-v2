@@ -2,10 +2,10 @@ import React from 'react'
 import Image from 'next/image'
 
 const highlights = [
-  'Approved by UGC and offered by AYRA (Deemed-to-be University).',
-  'Curriculum aligned with Outcome-Based Education (OBE) principles.',
-  'Designed in accordance with national higher education guidelines and interdisciplinary learning frameworks.',
-  'Integrates creative practice, communication studies, and media learning.',
+  'Approved by UGC and offered by AYRA (Deemed-to-be University)',
+  'Curriculum aligned with Outcome-Based Education (OBE) principles',
+  'Designed in accordance with national higher education guidelines and interdisciplinary learning frameworks',
+  'Integrates scientific knowledge, practical training, and industry exposure',
 ]
 
 const Recognised = () => {
@@ -14,7 +14,7 @@ const Recognised = () => {
       <div className="container mx-auto px-2 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
           <div>
-            <h2 className="font-schabo text-[#D5323B] text-[58px] leading-[1em] md:text-[96px] uppercase">
+            <h2 className="font-schabo text-[#D28400] text-[58px] leading-[1em] md:text-[96px] uppercase">
               Recognised.
               <br />
               Structured.
@@ -43,7 +43,7 @@ const Recognised = () => {
               src="/school-of-engg-tech/bba-general/img1.webp"
               width={700}
               height={450}
-              alt="Students collaborating on a project"
+              alt="Sports science students in a learning environment"
               className="w-full h-auto "
             />
           </div>

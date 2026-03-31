@@ -2,13 +2,14 @@ import React from "react"
 import Image from "next/image"
 import Slider from "./Slider"
 const highlights = [
-  "Comprehensive curriculum integrating hospitality management and business principles",
-  "Hands-on learning through specialised hospitality training laboratories",
-  "Exposure to hotel operations, food and beverage management, and guest services",
-  "Practical experience through internships with hotels and resorts",
-  "Opportunities to develop skills in service excellence, operational management, and customer experience",
-  "Training in hospitality entrepreneurship and business development",
-  "Industry-oriented learning through demonstrations, practical sessions, and simulations",
+  "Interdisciplinary curriculum combining design, media, and communication studies",
+  "Studio-based learning through creative projects and assignments",
+  "Exposure to visual storytelling, branding, and digital communication strategies",
+  "Opportunities to work on creative campaigns and media production projects",
+  "Practical experience through internships with design studios, advertising agencies, and media organisations",
+  "Access to design studios and media production facilities",
+  "Option to pursue B.A. (Honours) with advanced specialization and research",
+  "Strong emphasis on creative thinking, visual literacy, and communication strategy",
 ]
 
 
@@ -53,7 +54,7 @@ const Recognised = () => {
       </div>
     </section>
 <Slider />
-    <section className="w-full bg-[#FF4D48] py-8 md:py-12">
+    {/* <section className="w-full bg-[#FF4D48] py-8 md:py-12">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-start md:items-center">
           <div>
@@ -120,7 +121,7 @@ const Recognised = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
     </>
   )
 }
