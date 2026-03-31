@@ -48,37 +48,58 @@ export default function PaperFoldingScroll() {
   const sectionRef = useRef(null)
   const trackRef = useRef(null)
   const [scrollPerSection, setScrollPerSection] = useState(500)
+  const scrollPerSectionRef = useRef(500)
 
   useEffect(() => {
-    setScrollPerSection(window.innerHeight / 1.5)
-  }, [])
+    let scrollRafId = null
 
-  useEffect(() => {
-    const onScroll = () => {
+    const tick = () => {
       const trackEl = trackRef.current
-      const sectionEl = sectionRef.current
-      if (!trackEl || !sectionEl) return
+      if (!trackEl) return
 
       const scrollY = window.scrollY
-      const trackTop = trackEl.offsetTop
+      const trackTop = trackEl.getBoundingClientRect().top + scrollY
       const maxIndex = headings.length - 1
-
+      const step = scrollPerSectionRef.current || 1
       const scrollOffset = scrollY - trackTop
 
       if (scrollOffset >= 0) {
-        let newIndex = Math.floor(scrollOffset / scrollPerSection)
+        let newIndex = Math.floor(scrollOffset / step)
         newIndex = Math.min(Math.max(newIndex, 0), maxIndex)
-        if (newIndex !== activeIndex) {
-          setActiveIndex(newIndex)
-        }
+        setActiveIndex((prev) => (prev !== newIndex ? newIndex : prev))
       } else {
-        if (activeIndex !== 0) setActiveIndex(0)
+        setActiveIndex((prev) => (prev !== 0 ? 0 : prev))
       }
     }
 
+    const scheduleTick = () => {
+      if (scrollRafId != null) return
+      scrollRafId = requestAnimationFrame(() => {
+        scrollRafId = null
+        tick()
+      })
+    }
+
+    const updateScrollStep = () => {
+      scrollPerSectionRef.current = window.innerHeight / 1.5
+      setScrollPerSection(scrollPerSectionRef.current)
+      scheduleTick()
+    }
+
+    const onScroll = () => {
+      scheduleTick()
+    }
+
+    updateScrollStep()
+    window.addEventListener("resize", updateScrollStep)
     window.addEventListener("scroll", onScroll, { passive: true })
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [scrollPerSection, activeIndex])
+
+    return () => {
+      window.removeEventListener("resize", updateScrollStep)
+      window.removeEventListener("scroll", onScroll)
+      if (scrollRafId != null) cancelAnimationFrame(scrollRafId)
+    }
+  }, [])
 
   const trackHeight = `calc(100vh + ${
     (headings.length - 1) * scrollPerSection
@@ -90,7 +111,7 @@ export default function PaperFoldingScroll() {
         ref={sectionRef}
         className="sticky top-0 h-[100vh] flex items-center justify-center overflow-hidden bg-[url('/opencanvas/opc-bg-img.png')] bg-cover bg-center"
       >
-        <div className="relative z-10 flex flex-col md:flex-row-reverse w-full container mx-auto gap-6 md:gap-4 h-auto md:h-[100vh] py-10 md:py-0">
+        <div className="relative z-10 flex flex-col md:flex-row-reverse w-full container mx-auto px-4 md:px-0 gap-6 md:gap-4 h-auto md:h-[100vh] py-10 md:py-0">
           {/* Image on top for mobile, right for desktop */}
           <div className="w-full md:w-[29%] flex flex-col items-center justify-center gap-4 mb-6 md:mb-0">
             <div className="relative w-60 h-60 md:w-80 md:h-80">
@@ -101,6 +122,7 @@ export default function PaperFoldingScroll() {
                 width={160}
                 height={160}
                 priority
+                sizes="(max-width: 640px) 208px, (max-width: 1024px) 240px, 320px"
               />
             </div>
           </div>
@@ -111,7 +133,7 @@ export default function PaperFoldingScroll() {
           </div>
 
           {/* Text on bottom for mobile, left for desktop */}
-          <div className="w-full md:w-[70%] flex flex-col justify-center px-4 md:pr-4 relative text-center md:text-left">
+          <div className="w-full md:w-[70%] flex flex-col justify-center md:pr-4 relative text-left">
             <div className="h-auto">
               <h2 className="text-2xl md:text-[60px] uppercase text-[#002561] mb-4 leading-tight font-schabo">
                 {headings[activeIndex]}

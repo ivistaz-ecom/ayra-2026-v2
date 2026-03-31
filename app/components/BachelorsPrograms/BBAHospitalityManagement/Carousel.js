@@ -7,9 +7,18 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
 const items = [
-  { title: "Business Foundation" },
+  { title: "Hospitality Foundations" },
   { title: "Major Core" },
   { title: "Major Elective" },
+  { title: "Minor (Optional)" },
+  { title: "Proficiency Core (Ability Enhancement Courses)" },
+  { title: "Professional Skills (Skill Enhancement Courses)" },
+  { title: "Open Electives" },
+  { title: "University Core (Value-Based Courses)" },
+  { title: "Sports & Wellness" },
+  { title: "Industry Integrated Learning" },
+  { title: "Service and Field Learning" },
+  { title: "(LEAP - Learn | Engage | Apply | Progress)" },
 ]
 
 const settings = {
@@ -39,17 +48,17 @@ const Carousel = () => {
   return (
     <>
       <section className="w-full py-8 md:py-12">
-        <div className="container mx-auto lg:px-0 px-2">
+        <div className="container mx-auto px-4 md:px-0">
           <h3 className="font-tthoves-light text-black text-xl md:text-3xl mb-6 md:mb-8">
-            The range of courses offered to you across the programs includes:
+            The range of courses offered across the program includes:
           </h3>
 
           <Slider {...settings}>
             {items.map((item) => (
-              <div key={item.title} className="px-2 ">
+              <div key={item.title} className="px-2 h-[38px] sm:h-[43px] md:h-[105px]">
                 <div className="h-full flex items-center justify-center">
-                  <div className="border-2 border-dashed border-[#D6D6D6] bg-white/90 px-6 md:px-10 py-5 md:py-7">
-                    <div className="font-schabo text-[#0072C5] text-[36px] md:text-[48px] leading-[1.05] text-center">
+                  <div className="h-full w-full border-2 border-dashed border-[#D6D6D6] bg-white/90 px-2 sm:px-3 md:px-4 py-1 sm:py-1.5 md:py-2 flex items-center justify-center">
+                    <div className="font-schabo text-[#0072C5] text-[21px] sm:text-[22px] md:text-[27px] leading-[1.05] text-center">
                       {item.title}
                     </div>
                   </div>

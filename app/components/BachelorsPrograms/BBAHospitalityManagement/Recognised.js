@@ -3,7 +3,6 @@ import Image from 'next/image'
 
 const highlights = [
   'Approved by AICTE and offered by AYRA (Deemed-to-be University)',
-  'Approved by AICTE and offered by AYRA (Deemed-to-be University)',
   'Designed in accordance with national higher education guidelines and interdisciplinary learning frameworks',
   'Integrates hospitality operations training with business management education',
 ]
@@ -11,7 +10,7 @@ const highlights = [
 const Recognised = () => {
   return (
     <section className="w-full border-y border-dashed border-[#8E8E8E] py-6 md:py-10">
-      <div className="container mx-auto px-2 md:px-0">
+      <div className="container mx-auto px-4 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
           <div>
             <h2 className="font-schabo text-[#0072C5] text-[58px] leading-[1em] md:text-[96px] uppercase">
@@ -23,8 +22,8 @@ const Recognised = () => {
             </h2>
 
             <ul className="mt-6 space-y-4 text-black font-tthoves-light text-sm md:text-base">
-              {highlights.map((item) => (
-                <li key={item} className="flex items-start gap-2">
+              {highlights.map((item, index) => (
+                <li key={`${index}-${item}`} className="flex items-start gap-2">
                   <Image
                     src="/rocket-icon.svg"
                     width={18}

@@ -6,23 +6,22 @@ import Link from 'next/link'
 const HeroBanner = () => {
   return (
     <>
-      <div className="mx-auto">
-        <Breadcrumbs
-          items={[
-            { label: 'Home', href: '/' },
-            { label: 'Engg & Tech', href: '/schools/engg-and-tech' },
-          ]}
-        />
-      </div>
-      <div className="relative w-full bg-[#2050B2]">
+      <Breadcrumbs
+        items={[
+          { label: 'Home', href: '/' },
+          { label: 'Engg & Tech', href: '/schools/engg-and-tech' },
+        ]}
+      />
+      <div className="relative w-full max-w-none bg-[#2050B2] overflow-hidden">
         <div className="hidden md:block w-full">
           <Image
             src="/school-of-engg-tech/bba-general/banner-desktop1.webp"
             alt="Engg-and-Tech"
             width={1920}
             height={1080}
-            className="object-cover object-center w-full lg:h-auto"
+            className="object-cover object-center w-full h-auto max-w-none lg:h-auto"
             priority
+            sizes="100vw"
           />
         </div>
 

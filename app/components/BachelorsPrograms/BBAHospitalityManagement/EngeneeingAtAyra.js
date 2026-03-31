@@ -2,34 +2,34 @@ import React from "react"
 
 const yearJourney = [
   {
-    title: "Aspire - Igniting Curiosity (Year 1)",
+    title: "Aspire - Foundations of Hospitality (Year 1)",
     description:
-      "Explore foundations in engineering, mathematics, and computing through labs, projects, and collaborative learning.",
+      "Understand hospitality concepts, service management, communication, and basic operations.",
   },
   {
-    title: "Yearn - Building Mastery (Year 2)",
+    title: "Yearn - Core Hospitality Operations (Year 2)",
     description:
-      "Develop deep engineering knowledge, analytical thinking, programming expertise and problem-solving skills.",
+      "Build skills across food and beverage, front office, housekeeping, and service practices.",
   },
   {
-    title: "Relish - Creating Solutions (Year 3)",
+    title: "Relish - Advanced Hospitality Management (Year 3)",
     description:
-      "Apply learning through advanced courses, internships, hackathons, and collaborative innovation projects addressing real-world challenges.",
+      "Explore hotel operations, marketing, customer experience, and industry exposure.",
   },
   {
-    title: "Achieve - Launching the Future (Year 4)",
+    title: "Achieve - Professional Practice (Year 4)",
     description:
-      "Integrate academic learning with industry experience through internships, capstone projects, and entrepreneurial exploration.",
+      "Apply learning through internships, advanced management subjects, and hospitality-focused projects.",
   },
 ]
 
 const EngeneeingAtAyra = () => {
   return (
     <section className="w-full bg-[#0072C5] py-6 md:py-7">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+      <div className="container mx-auto px-4 md:px-0">
         <h2 className="text-[#FFFFFF] text-[20px] md:text-[24px] leading-[1.2] max-w-[680px] text-left">
-          Engineering at AYRA unfolds as a four-year journey of curiosity,
-          exploration, and application.
+          Hospitality at AYRA unfolds as a journey of learning, practice, and
+          real-world exposure.
         </h2>
 
         <div className="mt-5 grid grid-cols-1 gap-y-5 md:grid-cols-2 md:gap-x-4 md:gap-y-6 lg:grid-cols-4 lg:gap-x-0">

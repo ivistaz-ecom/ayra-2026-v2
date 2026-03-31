@@ -38,37 +38,58 @@ export default function PaperFoldingScroll() {
   const sectionRef = useRef(null)
   const trackRef = useRef(null)
   const [scrollPerSection, setScrollPerSection] = useState(500)
+  const scrollPerSectionRef = useRef(500)
 
   useEffect(() => {
-    setScrollPerSection(window.innerHeight / 1.5)
-  }, [])
+    let scrollRafId = null
 
-  useEffect(() => {
-    const onScroll = () => {
+    const tick = () => {
       const trackEl = trackRef.current
-      const sectionEl = sectionRef.current
-      if (!trackEl || !sectionEl) return
+      if (!trackEl) return
 
       const scrollY = window.scrollY
-      const trackTop = trackEl.offsetTop
+      const trackTop = trackEl.getBoundingClientRect().top + scrollY
       const maxIndex = headings.length - 1
-
+      const step = scrollPerSectionRef.current || 1
       const scrollOffset = scrollY - trackTop
 
       if (scrollOffset >= 0) {
-        let newIndex = Math.floor(scrollOffset / scrollPerSection)
+        let newIndex = Math.floor(scrollOffset / step)
         newIndex = Math.min(Math.max(newIndex, 0), maxIndex)
-        if (newIndex !== activeIndex) {
-          setActiveIndex(newIndex)
-        }
+        setActiveIndex((prev) => (prev !== newIndex ? newIndex : prev))
       } else {
-        if (activeIndex !== 0) setActiveIndex(0)
+        setActiveIndex((prev) => (prev !== 0 ? 0 : prev))
       }
     }
 
+    const scheduleTick = () => {
+      if (scrollRafId != null) return
+      scrollRafId = requestAnimationFrame(() => {
+        scrollRafId = null
+        tick()
+      })
+    }
+
+    const updateScrollStep = () => {
+      scrollPerSectionRef.current = window.innerHeight / 1.5
+      setScrollPerSection(scrollPerSectionRef.current)
+      scheduleTick()
+    }
+
+    const onScroll = () => {
+      scheduleTick()
+    }
+
+    updateScrollStep()
+    window.addEventListener("resize", updateScrollStep)
     window.addEventListener("scroll", onScroll, { passive: true })
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [scrollPerSection, activeIndex])
+
+    return () => {
+      window.removeEventListener("resize", updateScrollStep)
+      window.removeEventListener("scroll", onScroll)
+      if (scrollRafId != null) cancelAnimationFrame(scrollRafId)
+    }
+  }, [])
 
   const trackHeight = `calc(100vh + ${
     (headings.length - 1) * scrollPerSection
@@ -93,6 +114,7 @@ export default function PaperFoldingScroll() {
                   width={160}
                   height={160}
                   priority
+                  sizes="(max-width: 640px) 208px, (max-width: 1024px) 240px, 320px"
                 />
               </div>
             </div>

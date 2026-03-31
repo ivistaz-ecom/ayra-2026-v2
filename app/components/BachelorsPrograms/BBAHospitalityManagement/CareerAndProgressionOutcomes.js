@@ -3,35 +3,23 @@
 import React, { useState } from "react"
 
 const careerRoles = [
-  "Software Developer",
-  "Full Stack Developer",
-  "Data Analyst / Data Scientist",
-  "Machine Learning Engineer",
-  "Cloud Solutions Architect",
-  "Cybersecurity Analyst",
-  "DevOps Engineer",
-  "Systems Engineer",
-  "Blockchain Developer",
-  "Network Engineer",
+  "Hotel Operations Manager",
+  "Food and Beverage Manager",
+  "Front Office Manager",
+  "Hospitality Consultant",
 ]
 
 const industries = [
-  "Information Technology and Software Services",
-  "FinTech and Digital Banking",
-  "Healthcare Technology",
-  "E-commerce and Digital Platforms",
-  "Telecommunications and Cloud Infrastructure",
-  "Artificial Intelligence and Robotics",
-  "Media, Gaming, and Entertainment Technology",
+  "Hotels and Resorts",
+  "Hospitality and Tourism Enterprises",
+  "Hospitality Consulting Firms",
+  "Service and Customer Experience Organisations",
 ]
 
 const entrepreneurship = [
-  "AI-powered digital solutions",
-  "SaaS platforms and enterprise applications",
-  "Cybersecurity services",
-  "Data analytics consulting",
-  "Cloud infrastructure solutions",
-  "FinTech innovations",
+  "Restaurants and cafés",
+  "Boutique hospitality businesses",
+  "Hospitality consulting services",
 ]
 
 const accordionItems = [
@@ -40,7 +28,7 @@ const accordionItems = [
   {
     title: "Entrepreneurship Opportunities",
     content: entrepreneurship,
-    prefix: "Students may also pursue startup ventures in areas such as:",
+    prefix: "Graduates may also pursue:",
   },
 ]
 
@@ -51,7 +39,7 @@ const CareerAndProgressionOutcomes = () => {
     <section className="w-full bg-[#0098FF] py-8 md:py-10">
       <div className="container mx-auto px-4 md:px-0">
         <div>
-          <div className="p-6 md:p-8 border-b border-dashed border-white/35">
+          <div className="px-4 py-6 md:px-0 md:py-8 border-b border-dashed border-white/35">
             <h2 className="font-schabo uppercase text-[#C9D1FF] text-[52px] md:text-[84px] leading-[0.95]">
               Career and
               <br />
@@ -59,8 +47,8 @@ const CareerAndProgressionOutcomes = () => {
             </h2>
 
             <p className="mt-4 font-tthoves-light text-white/90 text-sm md:text-base leading-relaxed">
-              Graduates of AYRA&apos;s B.Tech programs can pursue diverse career
-              paths across the global technology ecosystem.
+              Graduates of the BBA in Hospitality Management program can pursue
+              careers across hospitality and service industries.
             </p>
           </div>
 
@@ -75,7 +63,7 @@ const CareerAndProgressionOutcomes = () => {
                   <button
                     type="button"
                     onClick={() => setOpenIndex(isOpen ? -1 : idx)}
-                    className="w-full flex items-center justify-between px-6 md:px-8 py-4 text-left"
+                    className="w-full flex items-center justify-between px-4 md:px-0 py-4 text-left"
                   >
                     <span className="font-tthoves-bold text-white text-xl md:text-3xl">
                       {item.title}
@@ -86,16 +74,16 @@ const CareerAndProgressionOutcomes = () => {
                   </button>
 
                   {isOpen ? (
-                    <div className="px-6 md:px-8 pb-5 md:pb-6">
+                    <div className="px-4 md:px-0 pb-5 md:pb-6">
                       {item.prefix ? (
                         <p className="font-tthoves-light text-white/90 text-sm md:text-base mb-3">
                           {item.prefix}
                         </p>
                       ) : null}
                       <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2">
-                        {item.content.map((line) => (
+                        {item.content.map((line, lineIdx) => (
                           <li
-                            key={line}
+                            key={`${item.title}-${lineIdx}-${line}`}
                             className="font-tthoves-light text-white/90 text-sm md:text-base leading-snug"
                           >
                             + {line}
@@ -108,10 +96,11 @@ const CareerAndProgressionOutcomes = () => {
               )
             })}
 
-            <div className="px-6 md:px-8 py-4 md:py-5">
+            <div className="px-4 md:px-0 py-4 md:py-5">
               <p className="font-tthoves-light text-white/85 text-sm md:text-base leading-relaxed">
-                The program also provides a strong foundation for higher
-                studies, research, and specialised postgraduate programs.
+                The program also provides a foundation for higher studies in
+                hospitality management, tourism management, and business
+                administration.
               </p>
             </div>
           </div>

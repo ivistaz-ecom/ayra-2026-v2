@@ -8,21 +8,23 @@ const WhoCanApply = () => {
       <div className="border-b-2 border-dashed border-[#D0E3FF] mb-10">
         <div className="relative w-full container mx-auto my-4">
           {/* Background Image */}
-          <div className="h-[500px] md:h-[600px] lg:h-[700px]">
+          <div className="relative h-[500px] md:h-[600px] lg:h-[700px]">
             <Image
               src="/admissions/apply-now/who-can-apply.png"
               alt="Who Can Apply Background"
               fill
+              sizes="(min-width: 1024px) 100vw, 0vw"
               className="object-cover lg:block hidden"
               priority
             />
           </div>
-          <div className="lg:h-auto h-[50vh] w-full">
+          <div className="relative lg:h-auto h-[50vh] w-full">
             <Image
               src="/admissions/apply-now/who-can-apply-mobile.png"
               alt="Who Can Apply Background"
               fill
-              className="lg:hidden p- object-cover"
+              sizes="(max-width: 1023px) 100vw, 0vw"
+              className="lg:hidden object-cover"
               priority
             />
           </div>

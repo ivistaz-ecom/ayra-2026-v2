@@ -28,9 +28,9 @@ const Ayraadapt = () => {
             />
           </div>
           {/* Overlay Content */}
-          <div className="absolute lg:bottom-24 bottom-20 lg:left-[55%] left-[0%] flex items-center">
-            <div className=" text-white px-5">
-              <p className="lg:text-base text-sm px-4">
+          <div className="absolute lg:bottom-24 bottom-20 lg:left-[55%] left-0 right-0 lg:right-auto flex items-center px-4 md:px-0">
+            <div className="text-white max-w-full lg:max-w-none">
+              <p className="lg:text-base text-sm">
                 At AYRA, your education isn’t just about degrees—it’s about
                 discovery, challenge, and self-expression.From state-of-the-art
                 sports facilities and sports team to performing arts,
@@ -38,11 +38,11 @@ const Ayraadapt = () => {
                 your learning experience is as dynamic as you are.
               </p>
 
-              <p className="lg:text-base text-sm px-4">
+              <p className="lg:text-base text-sm mt-3">
               This is your university experience. You choose how to shape it.
               </p>
-              <div className="pt-5 px-4" >
-                <HoverButton5 text="Know more" />
+              <div className="pt-5">
+                <HoverButton5 text="Apply now" />
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@ const Ayraadapt = () => {
 
 
 <div className="bg-[#002561] py-10 lg:py-10 border-t border-[#ffffff1f]">
-<div className="container mx-auto px-2 md:px-0 text-center">
+<div className="container mx-auto px-4 md:px-0 text-center">
   <Image
     src="/school-of-engg-tech/bba-general/img2.webp"
     width={700}
@@ -61,7 +61,7 @@ const Ayraadapt = () => {
     className="block lg:w-1/2 mx-auto"
   />
 </div>
-<div className="mt-8 border-t border-dashed border-[#2a72b7] pt-5 text-center">
+<div className="mt-8 border-t border-dashed border-[#2a72b7] pt-5 text-center px-4 md:px-0">
   <p className="font-tthoves-demibold text-bl text-[30px] leading-tight lg:text-[32px] text-white">
     Give us five minutes on a call.
   </p>

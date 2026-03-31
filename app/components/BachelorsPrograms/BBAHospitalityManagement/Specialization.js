@@ -11,17 +11,17 @@ const highlights = [
   "Industry-oriented learning through demonstrations, practical sessions, and simulations",
 ]
 
-
-const Recognised = () => {
+const Specialization = () => {
   return (
     <>
     <section className="w-full border-y border-dashed border-[#8E8E8E] py-6 md:py-10">
-      <div className="container mx-auto px-2 md:px-0">
+      <div className="container mx-auto px-4 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
           <div>
             <h2 className="font-schabo text-[#0072C5] text-[58px] leading-[1em] md:text-[96px] uppercase">
-              PROGRAM <br />
-              HIGHLIGHTS
+              Program
+              <br />
+              Highlights
             </h2>
 
             <ul className="mt-6 space-y-4 text-black font-tthoves-light text-sm lg:text-[14px]">
@@ -38,6 +38,8 @@ const Recognised = () => {
                 </li>
               ))}
             </ul>
+
+            
           </div>
 
           <div className="py-[5px]">
@@ -54,7 +56,7 @@ const Recognised = () => {
     </section>
 <Slider />
     <section className="w-full bg-[#009AE6] py-8 md:py-12">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+      <div className="container mx-auto px-4 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-start md:items-center">
           <div>
             <h2 className="font-schabo uppercase text-[#66D4FF] text-[58px] md:text-[96px] leading-[0.9]">
@@ -68,9 +70,9 @@ const Recognised = () => {
               simulate professional environments.
             </p>
 
-            <h3 className="mt-6 font-tthoves-medium text-white text-[24px] lg:text-[30px] leading-[1.1] max-w-[650px]">
-              The range of courses offered to you across the programs includes:
-            </h3>
+            <p className="mt-6 font-tthoves-medium text-white text-[16px] md:text-[18px] leading-relaxed max-w-[650px]">
+              Students gain hands-on experience through:
+            </p>
 
             <ul className="mt-5 space-y-2 text-sm lg:text-[14px]">
               {[
@@ -81,9 +83,9 @@ const Recognised = () => {
                 "Bakery and Confectionery Laboratory",
                 "Mock Front Office",
                 "Mock Guest Room (Mock Bedroom)",
-              ].map((item) => (
+              ].map((item, index) => (
                 <li
-                  key={item}
+                  key={`${index}-${item}`}
                   className="flex items-start gap-2 text-white/85 font-tthoves-light text-[16px] leading-[1.3]"
                 >
                   <Image
@@ -125,4 +127,4 @@ const Recognised = () => {
   )
 }
 
-export default Recognised
+export default Specialization

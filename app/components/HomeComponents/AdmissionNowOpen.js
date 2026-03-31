@@ -48,6 +48,7 @@ const AdmissionNowOpen = () => {
                                     src="/rocket-icon.svg"
                                     alt="rocket icon"
                                     fill
+                                    sizes="30px"
                                     className="object-contain rotate-[50deg]"
                                 />
                             </div>
