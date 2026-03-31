@@ -44,7 +44,6 @@ const YearBlock = ({
       className="w-full text-left focus-visible:outline-none"
       aria-expanded={isOpen}
     >
-      {/* Desktop: show both semesters side-by-side */}
       <div className="hidden md:grid grid-cols-[120px_1fr_1fr] divide-x divide-dashed divide-white/35">
         <div className=" py-6 text-center">
           <div className="font-schabo text-white/20 text-[56px] md:text-[72px] leading-[0.85]">
@@ -74,7 +73,6 @@ const YearBlock = ({
         />
       </div>
 
-      {/* Mobile: show both semesters stacked (no extra accordion) */}
       <div className="md:hidden py-6">
         <div className="px-4">
           <div className="font-schabo text-white/20 text-[56px] leading-[0.85]">
@@ -113,123 +111,108 @@ const YearBlock = ({
 const YEARS = [
   {
     yearLabel: "YEAR 1",
-    phaseLabel: "DESIGN",
-    phaseNote: "(Design your learning path)",
+    phaseLabel: "DISCOVER",
+    phaseNote: "(Build scientific and movement literacy)",
     semesters: [
       [
-        "Business Foundation Core 1",
-        "Business Foundation Core 2",
-        "Business Foundation Core 3",
-        "Proficiency Core 1",
-        "Professional Skills 1",
-        "Professional Skills 2",
-        "Proficiency Core 2",
-        "University Core 1 (Value-Based)",
-        "Sports & Wellness 1",
-        "Open Elective 1 (Multi Disciplinary)",
+        "Introduction to Sports Science",
+        "Human Anatomy & Physiology I",
+        "Human Anatomy & Physiology II",
+        "Physics / Biomechanics Basics",
+        "Communication & Professional Skills",
+        "Sports & Wellness / Practical I",
+        "University Core (Value-based)",
+        "Open Elective I",
       ],
       [
-        "Business Foundation Core 4",
-        "Business Foundation Core 5",
-        "Business Foundation Core 6",
-        "Proficiency Core 2",
-        "Professional Skills 3",
-        "University Core 2 (Value-Based)",
-        "Sports & Wellness 2",
-        "Open Elective 2 (Multi Disciplinary)",
-        "University Core 3 (Value-Based)",
+        "Introduction to Research & Inquiry",
+        "Exercise Physiology I",
+        "Motor Learning & Control",
+        "Statistics for Sports Science",
+        "Sports & Wellness / Practical II",
+        "University Core (Value-based)",
+        "Open Elective II",
       ],
     ],
   },
   {
     yearLabel: "YEAR 2",
-    phaseLabel: "EXPLORE",
-    phaseNote: "(Go beyond boundaries. Dive deeper. Learn by doing!)",
+    phaseLabel: "ANALYSE",
+    phaseNote: "(Measurement, methods, and training principles)",
     semesters: [
       [
-        "Business Foundation Core 7",
-        "Business Foundation Core 8",
-        "Major Core 1",
-        "Major Core 2",
-        "Professional Skills 4",
-        "University Core 4 (Value-Based)",
-        "Sports & Wellness 3",
-        "Open Elective 3 (Multi Disciplinary)",
-        "Industry Integrated Learning 1",
+        "Exercise Physiology II",
+        "Biomechanics I",
+        "Sports Nutrition",
+        "Strength & Conditioning I",
+        "Sports & Wellness III",
+        "University Core (Value-based)",
+        "Open Elective III",
       ],
       [
-        "Business Foundation Core 9",
-        "Business Foundation Core 10",
-        "Program Basic 11",
-        "Major Core 3",
-        "Major Core 4",
-        "Minor 1*",
-        "Minor 2*",
-        "Professional Skills 5",
-        "Sports & Wellness 4",
-        "University Core 5 (Value-Based)",
+        "Research Methods in Sports Science",
+        "Biomechanics II",
+        "Physiological Testing & Monitoring",
+        "Strength & Conditioning II",
+        "Sports Psychology Foundations",
+        "Industry / Field Exposure I",
+        "Minor / Elective *",
       ],
     ],
   },
   {
     yearLabel: "YEAR 3",
-    phaseLabel: "EMBRACE",
-    phaseNote:
-      "(Own your journey. Embrace leadership, step into your purpose!)",
+    phaseLabel: "APPLY",
+    phaseNote: "(Performance, health, and integrated practice)",
     semesters: [
       [
-        "Business Foundation Core 12",
-        "Business Foundation Core 13",
-        "Major Elective 1",
-        "Major Elective 2",
-        "Major Elective 3",
-        "Minor 3*",
-        "Minor 4*",
-        "Professional Skills 6",
-        "Sports & Wellness 5",
+        "Advanced Exercise Physiology",
+        "Injury Prevention & Load Management",
+        "Performance Analysis",
+        "Elective / Major Core I",
+        "Sports & Wellness IV",
+        "Field Practicum I",
+        "Minor / Elective *",
       ],
       [
-        "Business Foundation Core 14",
-        "Major Elective 4",
-        "Minor 5*",
-        "Minor 6*",
-        "Professional Skills 7",
-        "Sports & Wellness 6",
-        "Industry Integrated Learning 2",
+        "Recovery & Regeneration Science",
+        "Elective / Major Core II",
+        "Elective / Major Core III",
+        "Sports Science Technology & Data",
+        "Field Practicum II",
+        "Professional Skills Capstone Prep",
+        "Minor / Elective *",
       ],
     ],
   },
   {
     yearLabel: "YEAR 4",
-    phaseLabel: "ELEVATE",
-    phaseNote: "(Rise to Mastery)",
+    phaseLabel: "INTEGRATE",
+    phaseNote: "(Research, internship, professional identity)",
     semesters: [
       [
-        "Advanced Major Elective 1",
-        "Advanced Major Elective 2",
-        "Advanced Minor Elective 1",
-        "Quantitative & Qualitative Research Methods",
-        "Field Study/Minor Research Project",
+        "Advanced Elective I",
+        "Advanced Elective II",
+        "Quantitative / Qualitative Project Methods",
+        "Dissertation / Project Proposal",
       ],
       [
-        "Advanced Major Elective 3",
-        "Advanced Minor Elective 2",
-        "Dissertation/Capstone Project",
+        "Internship / Extended Project",
+        "Dissertation or Capstone Project",
+        "Advanced Elective III",
       ],
     ],
   },
 ]
 
 const Accordion = () => {
-  // Keep only one year expanded at a time.
-  // Default to Year 1 expanded.
   const [openYearIndex, setOpenYearIndex] = useState(0)
 
   return (
-    <section className="w-full bg-[#FF4D48] py-10 md:py-16">
+    <section className="w-full bg-[#FFA300] py-10 md:py-16">
       <div className="w-full max-w-[980px] mx-auto px-4 md:px-8">
         <div className="grid md:grid-cols-[280px_1fr] gap-8 md:gap-20 items-start mb-10 md:mb-14">
-          <h2 className="font-schabo uppercase text-[#FFB2B7] leading-[0.9] text-[64px] md:text-[86px] lg:text-[100px]">
+          <h2 className="font-schabo uppercase text-[#FFD87B] leading-[0.9] text-[64px] md:text-[86px] lg:text-[100px]">
             DESIGNED
             <br />
             FOR YOU
@@ -237,13 +220,10 @@ const Accordion = () => {
 
           <div className="pt-2 md:pt-4">
             <p className="font-tthoves-light text-white text-[14px] md:text-[18px] leading-relaxed max-w-[720px]">
-              At AYRA, learning moves from foundational design principles to
-              applied creative practice and communication strategy.
+              At AYRA, learning moves from a foundational understanding of human performance to applied training methods and sports performance analysis.
             </p>
             <p className="mt-4 md:mt-6 font-tthoves-light text-white text-[14px] md:text-[18px] leading-relaxed max-w-[720px]">
-              Students gradually develop creative confidence through studio
-              work, collaborative projects, media production, and real-world
-              exposure.
+              Students gradually develop scientific knowledge alongside practical experience through laboratory work, sports testing, field training, and internships in sports and fitness environments.
             </p>
           </div>
         </div>
@@ -269,8 +249,7 @@ const Accordion = () => {
           </div>
         </div>
         <p className="mt-4 font-tthoves-light text-white/75 text-[10px] md:text-[12px] leading-relaxed">
-          * Optional. Credits for the Minor courses will be in addition to the
-          overall credits for the program.
+          * Optional. Credits for minor or elective tracks may add to total programme credits per regulations.
         </p>
       </div>
     </section>

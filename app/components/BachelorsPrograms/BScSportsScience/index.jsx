@@ -8,14 +8,13 @@ import EngeneeingAtAyra from "./EngeneeingAtAyra"
 import Holistic from "./Holistic"
 import Carousel from "./Carousel"
 import Accordion from "./Accordion"
-// import Slider from "./Slider"
 import Specialization from "./Specialization"
 import Ayraadapt from "./Ayraadapt"
 import CareerAndProgressionOutcomes from "./CareerAndProgressionOutcomes"
 import Career from "./Career"
 import Sports from "./Sports"
-
-const BBAHospitalityManagement = () => {
+import TheAyraSpots from "./TheAyraSpots"
+const BScSportsScience = () => {
   return (
     <>
       <HeroBanner />
@@ -27,16 +26,14 @@ const BBAHospitalityManagement = () => {
       <Holistic />
       <Carousel />
       <Accordion />
-      {/* <Slider /> */}
       <Specialization />
-      <Sports />
       <Career />
-
- 
+      <Sports />
+      <TheAyraSpots />
       <CareerAndProgressionOutcomes />
       <Ayraadapt />
     </>
   )
 }
 
-export default BBAHospitalityManagement
+export default BScSportsScience

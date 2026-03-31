@@ -2,30 +2,28 @@ import React from "react"
 import Image from "next/image"
 
 const highlights = [
-  "Internships with design studios, advertising agencies, media houses, and digital marketing firms",
-  "Participation in creative campaigns, media projects, and collaborative assignments",
-  "Workshops with design professionals, media practitioners, and communication experts",
-  "Opportunities to build professional portfolios and creative work",
-  "Exposure to emerging trends in design, media, and digital communication",
-  "Development of creative thinking, storytelling, and strategic communication skills",
+  "Access to sports performance laboratories and fitness training facilities",
+  "Participation in sports testing, performance evaluation, and athlete monitoring",
+  "Internships with sports academies, fitness centers, and sports organizations",
+  "Workshops with sports scientists, coaches, physiotherapists, and nutrition experts",
+  "Exposure to sports analytics tools and performance technologies",
+  "Development of leadership, coaching, and athlete management skills",
 ]
 
 const Career = () => {
   return (
     <>
-      {" "}
       <section className="w-full">
         <div className=" py-8 md:py-10">
           <div className="container mx-auto px-2 md:px-0">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
               <div>
-                <h2 className="font-schabo text-[#D5323B] uppercase text-[52px] leading-[0.95] md:text-[88px] md:leading-[0.9]">
+                <h2 className="font-schabo text-[#D28400] uppercase text-[52px] leading-[0.95] md:text-[88px] md:leading-[0.9]">
                   VALUE ADDED
                   <br /> LEARNING
                 </h2>
                 <p className="mt-6 max-w-[90%] font-tthoves-light text-bl text-sm md:text-base leading-relaxed">
-                  Students enhance their learning through opportunities that
-                  connect creative practice with industry exposure.
+                Students strengthen their learning experience through additional opportunities that connect sports science with real performance environments.
                 </p>
 
                 <ul className="mt-6 space-y-4">
@@ -52,7 +50,7 @@ const Career = () => {
                   <div className="hidden md:block w-full">
                     <Image
                       src="/school-of-engg-tech/bba-general/img7.webp"
-                      alt="Engg-and-Tech"
+                      alt="Sports science at AYRA"
                       width={1920}
                       height={1080}
                       className="object-cover object-center w-full lg:h-auto"
@@ -63,7 +61,7 @@ const Career = () => {
                   <div className="block md:hidden w-full">
                     <Image
                       src="/school-of-engg-tech/bba-general/img7.webp"
-                      alt="Engg-and-Tech"
+                      alt="Sports science at AYRA"
                       width={800}
                       height={1000}
                       className="object-cover object-center w-full h-auto"
