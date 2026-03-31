@@ -10,9 +10,9 @@ const Breadcrumbs = ({ items = [] }) => {
     return (
         <>
             <div className="w-full bg-[#002560] flex flex-col justify-center items-center pt-24">
-                <div className="container">
+                <div className="container mx-auto w-full px-4 md:px-0">
                     <nav aria-label="Breadcrumb" className="py-4">
-                        <ol className="flex items-center space-x-1 px-4 lg:px-0 text-gray-500">
+                        <ol className="flex items-center space-x-1 text-gray-500">
                             {items.map((item, idx) => (
                                 <li key={idx} className="flex items-center">
                                     {idx > 0 && (

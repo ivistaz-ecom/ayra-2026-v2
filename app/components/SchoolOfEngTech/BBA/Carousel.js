@@ -41,17 +41,20 @@ const Carousel = () => {
   return (
     <>
     <section className="w-full py-8 md:py-12">
-      <div className="container mx-auto lg:px-0 px-2">
+      <div className="container mx-auto px-4 md:px-0">
         <h3 className="font-tthoves-light text-black text-xl md:text-3xl mb-6 md:mb-8">
           The range of courses offered to you across the programs includes:
         </h3>
 
         <Slider {...settings}>
-          {items.map((item) => (
-            <div key={item.title} className="px-2 ">
+          {items.map((item, index) => (
+            <div
+              key={`${index}-${item.title}`}
+              className="px-2 h-[70px] sm:h-[80px] md:h-[95px]"
+            >
               <div className="h-full flex items-center justify-center">
-                <div className="border-2 border-dashed border-[#D6D6D6] bg-white/90 px-6 md:px-10 py-5 md:py-7">
-                  <div className="font-schabo text-[#0072C5] text-[36px] md:text-[48px] leading-[1.05] text-center">
+                <div className="h-full w-full border-2 border-dashed border-[#D6D6D6] bg-white/90 px-4 sm:px-6 md:px-10 py-4 flex items-center justify-center">
+                  <div className="font-schabo text-[#0072C5] text-[25px] sm:text-[27px] md:text-[29px] leading-[1.08] text-center w-full">
                     {item.title}
                   </div>
                 </div>

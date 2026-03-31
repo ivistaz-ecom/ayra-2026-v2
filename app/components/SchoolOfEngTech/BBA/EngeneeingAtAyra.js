@@ -26,7 +26,7 @@ const yearJourney = [
 const EngeneeingAtAyra = () => {
   return (
     <section className="w-full bg-[#0072C5] py-6 md:py-7">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+      <div className="container mx-auto px-4 md:px-0">
         <h2 className="text-[#FFFFFF] text-[22px] md:text-[24px] leading-[1.15] max-w-[680px]">
           Hospitality at AYRA unfolds as a journey of learning, practice, and
           real-world exposure.

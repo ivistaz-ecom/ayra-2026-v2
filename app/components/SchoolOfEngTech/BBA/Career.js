@@ -12,7 +12,7 @@ const Career = () => {
       {" "}
       <section className="w-full">
         <div className="bg-[#0093FF] py-8 md:py-10">
-          <div className="container mx-auto px-2 md:px-0">
+          <div className="container mx-auto px-4 md:px-0">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
               <div>
                 <h2 className="font-schabo text-white uppercase text-[52px] leading-[0.95] md:text-[88px] md:leading-[0.9]">
@@ -81,7 +81,7 @@ const Career = () => {
         </div>
       </section>
       <div className="bg-[#002561] py-10 lg:py-10 border-t border-[#ffffff1f]">
-        <div className="container mx-auto px-2 md:px-0 text-center">
+        <div className="container mx-auto px-4 md:px-0 text-center">
         <Image
               src="/school-of-engg-tech/bba-general/img2.webp"
               width={700}

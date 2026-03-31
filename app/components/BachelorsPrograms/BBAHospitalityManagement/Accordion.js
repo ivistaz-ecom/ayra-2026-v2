@@ -227,7 +227,7 @@ const Accordion = () => {
 
   return (
     <section className="w-full bg-[#0072C5] py-10 md:py-16">
-      <div className="w-full max-w-[980px] mx-auto px-4 md:px-8">
+      <div className="w-full max-w-[980px] mx-auto px-4 md:px-0">
         <div className="grid md:grid-cols-[280px_1fr] gap-8 md:gap-20 items-start mb-10 md:mb-14">
           <h2 className="font-schabo uppercase text-[#67D2FF] leading-[0.9] text-[64px] md:text-[86px] lg:text-[100px]">
             DESIGNED

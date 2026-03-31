@@ -46,7 +46,7 @@ const Specialization = () => {
   return (
     <>
     <section className="w-full bg-white py-8 md:py-14">
-      <div className="container mx-auto px-2 md:px-0">
+      <div className="container mx-auto px-4 md:px-0">
         <h2 className="font-schabo text-[#002561] text-[52px] leading-[0.95] md:text-[88px] md:leading-[0.95] uppercase tracking-tight">
           Specialisations
         </h2>

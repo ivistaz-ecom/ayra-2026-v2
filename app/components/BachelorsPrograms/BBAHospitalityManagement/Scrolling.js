@@ -14,33 +14,28 @@ const images = [
 ]
 
 const headings = [
-  "YOUR BBA JOURNEY AT AYRA",
-  "What kind of flexibility do you need?",
-  "How do you see yourself applying what you learn?",
-  "How important is experiential learning to you?",
-  "Are you interested in earning certifications alongside your degree?",
-  "Do you see sports as part of your future?",
-  "What kind of campus experience excites you?",
+  "Your Hospitality Journey at AYRA",
+  "Your Hospitality Journey at AYRA",
+  "Your Hospitality Journey at AYRA",
+  "Your Hospitality Journey at AYRA",
+  "Your Hospitality Journey at AYRA",
+  
 ]
 
 const subtitles = [
   "Day 0",
-  "Day 1",
-  "Day 2",
-  "Day 3",
-  "Day 4",
-  "Day 5",
-  "Day 6",
+  "Year 1",
+  "Year 2",
+  "Year 3",
+  "Year 4",
 ]
 
 const descriptions = [
-  "Regular Entry to BBA Program",
-  "I’d love to explore different subjects before deciding on my final path",
-  "I want to launch something of my own—a startup, a business, or a big idea",
-  "I learn by doing—hands-on projects and real-world applications",
-  "Absolutely—certifications that give me a career edge sound great",
-  "Yes! I want to build a career in sports or a related industry",
-  "A 24/7 learning space where I can explore ideas whenever inspiration hits ",
+  "Regular Entry to BBA (Hospitality Management) Program",
+  "Exit with a Certificate in Foundations of Hospitality Management with 40 Credits.",
+  "Exit with a Diploma in Hospitality Management with 80 Credits.",
+  "Exit with an Advanced Diploma in Hospitality Management with 120+ Credits.",
+  "Exit with BBA (Hospitality Management) Degree with 160+ Credits.",
 ]
 
 export default function PaperFoldingScroll() {
@@ -90,7 +85,7 @@ export default function PaperFoldingScroll() {
         ref={sectionRef}
         className="sticky top-0 h-[100vh] flex items-center justify-center overflow-hidden bg-[url('/opencanvas/opc-bg-img.png')] bg-cover bg-center"
       >
-        <div className="relative z-10 flex flex-col md:flex-row-reverse w-full container mx-auto gap-6 md:gap-4 h-auto md:h-[100vh] py-10 md:py-0">
+        <div className="relative z-10 flex flex-col md:flex-row-reverse w-full container mx-auto px-4 md:px-0 gap-6 md:gap-4 h-auto md:h-[100vh] py-10 md:py-0">
           {/* Image on top for mobile, right for desktop */}
           <div className="w-full md:w-[29%] flex flex-col items-center justify-center gap-4 mb-6 md:mb-0">
             <div className="relative w-60 h-60 md:w-80 md:h-80">
@@ -111,7 +106,7 @@ export default function PaperFoldingScroll() {
           </div>
 
           {/* Text on bottom for mobile, left for desktop */}
-          <div className="w-full md:w-[70%] flex flex-col justify-center px-4 md:pr-4 relative text-center md:text-left">
+          <div className="w-full md:w-[70%] flex flex-col justify-center md:pr-4 relative text-center md:text-left">
             <div className="h-auto">
               <h2 className="text-2xl md:text-[60px] uppercase text-[#002561] mb-4 leading-tight font-schabo">
                 {headings[activeIndex]}
