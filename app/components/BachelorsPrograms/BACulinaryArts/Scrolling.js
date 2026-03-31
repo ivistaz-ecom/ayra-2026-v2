@@ -13,25 +13,25 @@ const images = [
   "/opencanvas/rocket7.png",
 ]
 
-const journeyTitle = "Your Engineering Journey at AYRA"
+const journeyTitle = "Your Culinary Journey at AYRA"
 
 const milestones = [
-  { label: "Day 0", text: "Regular Entry to B.Tech Program" },
+  { label: "Day 0", text: "Regular Entry to BA (Culinary Arts) Program" },
   {
     label: "Year 1",
-    text: "Exit with a certificate in Computer Science/AI&ML/Data Science with 40 Credits.",
+    text: "Exit with a Certificate in Culinary Arts with 40 Credits.",
   },
   {
     label: "Year 2",
-    text: "Exit with a Diploma in Computer Science/AI&ML/Data Science with 80 Credits.",
+    text: "Exit with a Diploma in Culinary Arts with 80 Credits.",
   },
   {
     label: "Year 3",
-    text: "Exit with BSc Computer Science/AI&ML/Data Science with 120+ Credits.",
+    text: "Exit with an Advanced Diploma in Culinary Arts with 120+ Credits.",
   },
   {
     label: "Year 4",
-    text: "Exit with B.Tech Computer Science/AI&ML/Data Science Degree with 160+ Credits.",
+    text: "Exit with BA (Culinary Arts) Degree with 160+ Credits.",
   },
 ]
 
@@ -127,7 +127,7 @@ export default function PaperFoldingScroll() {
           {/* Text on bottom for mobile, left for desktop */}
           <div className="w-full md:w-[70%] flex flex-col justify-center md:pr-4 relative text-left">
             <div className="h-auto max-w-3xl mx-0 md:max-w-none">
-              <h2 className="text-[26px] sm:text-[34px] md:text-[56px] lg:text-[72px] xl:text-[78px] uppercase text-[#744AC4] mb-4 sm:mb-6 leading-[0.95] font-schabo">
+              <h2 className="text-[26px] sm:text-[34px] md:text-[56px] lg:text-[72px] xl:text-[78px] uppercase text-[#FF5EBB] mb-4 sm:mb-6 leading-[0.95] font-schabo">
                 {journeyTitle}
               </h2>
               <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-[40px] text-[#0B0B0B] leading-tight font-tthoves-bold">
