@@ -5,7 +5,6 @@ const description = [
   'At AYRA, design education is built around creative thinking, experimentation, and communication clarity.',
   'Students are encouraged to explore ideas across formats and media while developing the ability to design with purpose and communicate with intent.',
 ]
-
 const Holistic = () => {
   return (
     <section className="w-full  py-6 md:py-10">

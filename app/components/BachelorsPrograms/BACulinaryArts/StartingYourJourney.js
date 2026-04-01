@@ -25,19 +25,18 @@ const StartingYourJourney = () => {
           />
 
           {/* Mobile text overlay (visible only on small screens). */}
-          <div className="absolute inset-0 flex md:hidden items-end justify-center px-5 pb-10">
-            <div className="w-full text-center">
-              
-              <p className="mt-2 font-tthoves-light text-white text-[15px] leading-[1.35] text-center">
+          <div className="absolute inset-0 flex md:hidden items-end pb-10">
+            <div className="w-full text-left">
+              <p className="font-tthoves-light text-white text-[15px] leading-snug">
                 To apply for B.A. (Culinary Arts), candidates must have
                 completed 10+2 or equivalent from a recognised board.
               </p>
-              <p className="mt-1.5 font-tthoves-light text-white text-[15px] leading-[1.35] text-center">
+              <p className="mt-6 font-tthoves-light text-white text-[15px] leading-snug">
                 Students from any academic stream may apply. Interest in
                 culinary arts, food preparation, and hospitality service is
                 preferred.
               </p>
-              <p className="mt-1.5 font-tthoves-light text-white text-[15px] leading-[1.35] text-center">
+              <p className="mt-6 font-tthoves-light text-white text-[15px] leading-snug">
                 Admissions are based on qualifying marks. Shortlisted
                 candidates may be invited for an interaction/interview.
                 Creativity, communication, and teamwork are considered
@@ -46,9 +45,9 @@ const StartingYourJourney = () => {
             </div>
           </div>
 
-          {/* Desktop overlay content only. */}
-          <div className="absolute inset-0 hidden md:flex items-end sm:items-start justify-center md:justify-end pt-0 sm:pt-8 md:pt-24 px-0 md:px-8 pb-0 md:pb-0">
-            <div className="w-full md:w-[50%] px-3 sm:px-4 md:px-6 py-4 sm:py-5 md:pt-[160px] md:pb-6 text-white bg-[#0a2866]/88 md:bg-transparent backdrop-blur-[1px] md:backdrop-blur-none rounded-none md:rounded-none">
+          {/* Desktop overlay — aligns with container padding */}
+          <div className="absolute inset-0 hidden md:flex items-end sm:items-start justify-end pt-0 sm:pt-8 md:pt-24 pb-0">
+            <div className="w-full md:w-[50%] py-4 sm:py-5 md:pt-[160px] md:pb-6 text-white bg-[#0a2866]/88 md:bg-transparent backdrop-blur-[1px] md:backdrop-blur-none rounded-none md:rounded-none pl-5 pr-5">
               <p className="mt-0 md:mt-1 font-tthoves-light text-[12px] sm:text-xs md:text-sm text-left">
                 Admissions &amp; Eligibility
                 <br />
@@ -59,20 +58,58 @@ const StartingYourJourney = () => {
               <h3 className="mt-3 font-tthoves-bold text-[12px] sm:text-xs md:text-sm text-left">
                 Eligibility Criteria:
               </h3>
-              <ul className="mt-1 space-y-1.5 list-disc pl-4 sm:pl-5 font-tthoves-light text-[11px] sm:text-[12px] md:text-[12px] leading-relaxed text-left">
-                <li>
-                  The candidate must have successfully completed 10+2 (Higher
-                  Secondary) or equivalent examination from a recognised board.
+              <ul className="mt-1 space-y-1.5 font-tthoves-light text-[11px] sm:text-[12px] md:text-[12px] leading-relaxed text-left">
+                <li className="flex items-start gap-2">
+                  <Image
+                    src="/rocket-icon.svg"
+                    width={14}
+                    height={14}
+                    alt="arrow icon"
+                    className="mt-0.5 h-3.5 w-3.5 shrink-0 rotate-45"
+                  />
+                  <span>
+                    The candidate must have successfully completed 10+2 (Higher
+                    Secondary) or equivalent examination from a recognised
+                    board.
+                  </span>
                 </li>
-                <li>Students from any academic stream are eligible to apply.</li>
-                <li>
-                  Candidates with an interest in culinary arts, food
-                  preparation, and hospitality service may be given preference.
+                <li className="flex items-start gap-2">
+                  <Image
+                    src="/rocket-icon.svg"
+                    width={14}
+                    height={14}
+                    alt="arrow icon"
+                    className="mt-0.5 h-3.5 w-3.5 shrink-0 rotate-45"
+                  />
+                  <span>Students from any academic stream are eligible to apply.</span>
                 </li>
-                <li>
-                  In case of SC/ST/OBC/Category I candidates, a 5% relaxation
-                  in the aggregate marks obtained in the qualifying examination
-                  may be considered as per applicable regulations.
+                <li className="flex items-start gap-2">
+                  <Image
+                    src="/rocket-icon.svg"
+                    width={14}
+                    height={14}
+                    alt="arrow icon"
+                    className="mt-0.5 h-3.5 w-3.5 shrink-0 rotate-45"
+                  />
+                  <span>
+                    Candidates with an interest in culinary arts, food
+                    preparation, and hospitality service may be given
+                    preference.
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Image
+                    src="/rocket-icon.svg"
+                    width={14}
+                    height={14}
+                    alt="arrow icon"
+                    className="mt-0.5 h-3.5 w-3.5 shrink-0 rotate-45"
+                  />
+                  <span>
+                    In case of SC/ST/OBC/Category I candidates, a 5% relaxation
+                    in the aggregate marks obtained in the qualifying
+                    examination may be considered as per applicable regulations.
+                  </span>
                 </li>
               </ul>
 

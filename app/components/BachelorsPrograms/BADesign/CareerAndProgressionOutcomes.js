@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import React, { useState } from "react"
 
 const careerRoles = [
@@ -34,7 +35,8 @@ const accordionItems = [
   {
     title: "Entrepreneurship Opportunities",
     content: entrepreneurship,
-    prefix: "Graduates may also pursue entrepreneurial ventures such as:",
+    prefix:
+      "Graduates may also pursue entrepreneurial ventures such as:",
   },
 ]
 
@@ -53,8 +55,8 @@ const CareerAndProgressionOutcomes = () => {
             </h2>
 
             <p className="mt-4 font-tthoves-light text-white/90 text-sm md:text-base leading-relaxed">
-              Graduates of AYRA&apos;s BA Design program can pursue diverse
-              creative and communication-focused career pathways.
+              Graduates of the B.A. in Design and Communication program can
+              pursue diverse roles across creative and communication industries.
             </p>
           </div>
 
@@ -90,9 +92,16 @@ const CareerAndProgressionOutcomes = () => {
                         {item.content.map((line) => (
                           <li
                             key={line}
-                            className="font-tthoves-light text-white/90 text-sm md:text-base leading-snug"
+                            className="flex items-start gap-2 font-tthoves-light text-white/90 text-sm md:text-base leading-snug"
                           >
-                            + {line}
+                            <Image
+                              src="/rocket-icon.svg"
+                              width={14}
+                              height={14}
+                              alt="arrow icon"
+                              className="mt-0.5 h-3.5 w-3.5 shrink-0 rotate-45"
+                            />
+                            <span>{line}</span>
                           </li>
                         ))}
                       </ul>
@@ -104,7 +113,9 @@ const CareerAndProgressionOutcomes = () => {
 
             <div className="px-6 md:px-8 py-4 md:py-5">
               <p className="font-tthoves-light text-white/85 text-sm md:text-base leading-relaxed">
-              The program also provides a strong foundation for postgraduate studies in design, media studies, communication, branding, and creative industries.
+                The program also provides a strong foundation for postgraduate
+                studies in design, media studies, communication, branding, and
+                creative industries.
               </p>
             </div>
           </div>

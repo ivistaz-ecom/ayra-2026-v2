@@ -6,7 +6,7 @@ const EngineeringLabs = () => {
     <section className="w-full bg-white py-5 md:py-6">
       <div className="container mx-auto px-4 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="bg-[#744AC6] px-0 py-5 md:py-6 order-2 md:order-1">
+          <div className="bg-[#744AC6] px-0 py-5 md:py-6 order-2 md:order-1 pl-5 pr-5">
             <h2 className="font-schabo uppercase text-[#D6DAFF] text-[32px] sm:text-[40px] md:text-[56px] lg:text-[72px] leading-[0.95] text-left">
               Engineering Labs &amp;
               <br />

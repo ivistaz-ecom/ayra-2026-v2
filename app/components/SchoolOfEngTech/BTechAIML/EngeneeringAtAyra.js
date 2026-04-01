@@ -36,9 +36,9 @@ export default function EngeneeringAtAyra() {
           {journeySteps.map((item) => (
             <div
               key={item.title}
-              className="text-left sm:px-4 lg:px-6 first:lg:pl-0 last:lg:pr-0"
+              className="text-left sm:px-4 lg:px-6 first:lg:pl-0 last:lg:pr-0 flex flex-col h-full"
             >
-              <h3 className="text-white font-tthoves-bold text-sm sm:text-base md:text-[17px] lg:text-lg leading-snug">
+              <h3 className="text-white font-tthoves-bold text-sm sm:text-base md:text-[17px] lg:text-lg leading-snug min-h-[40px] sm:min-h-[44px] md:min-h-[48px]">
                 {item.title}
               </h3>
               <p className="mt-2 md:mt-3 text-white/90 font-tthoves-light text-xs sm:text-sm md:text-[15px] leading-relaxed">

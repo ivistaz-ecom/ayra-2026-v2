@@ -10,18 +10,18 @@ const Different = () => {
               At AYRA, design is not about following a fixed style.
             </p>
 
-            <p className="font-tthoves-light text-black text-base leading-relaxed  max-w-[520px]">
+            <p className="font-tthoves-light text-black text-base leading-relaxed max-w-[520px] mt-3 md:mt-4">
               You are encouraged to explore, experiment, and find your own
               approach. Learning happens through making, testing, and refining
               ideas, not just studying them.
             </p>
 
-            <p className="font-tthoves-light text-black text-base leading-relaxed  max-w-[520px]">
+            <p className="font-tthoves-light text-black text-base leading-relaxed max-w-[520px] mt-3 md:mt-4">
               This allows you to build both creative confidence and clarity in
               how you want to express your ideas.
             </p>
 
-            <p className="font-tthoves-light text-black text-base leading-relaxed  max-w-[520px]">
+            <p className="font-tthoves-light text-black text-base leading-relaxed max-w-[520px] mt-3 md:mt-4">
               The program connects creative exploration with practical work,
               helping students build both artistic and strategic thinking.
             </p>

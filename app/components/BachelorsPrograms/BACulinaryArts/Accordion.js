@@ -227,7 +227,7 @@ const Accordion = () => {
 
   return (
     <section className="w-full bg-[#FF5EBB] py-8 sm:py-10 md:py-16">
-      <div className="w-full max-w-[980px] mx-auto px-4 md:px-0">
+      <div className="container mx-auto px-4 md:px-0">
         <div className="grid md:grid-cols-[280px_1fr] gap-6 sm:gap-8 md:gap-20 items-center md:items-start mb-8 sm:mb-10 md:mb-14 text-left">
           <h2 className="font-schabo uppercase text-[#C9B4FF] leading-[0.9] text-[42px] sm:text-[52px] md:text-[72px] lg:text-[86px] xl:text-[100px] mx-0 max-w-[320px] sm:max-w-none md:max-w-none">
             DESIGNED
@@ -248,7 +248,7 @@ const Accordion = () => {
           </div>
         </div>
 
-        <div className="w-full max-w-[980px] mx-auto border border-dashed border-white/35 overflow-hidden">
+        <div className="w-full border border-dashed border-white/35 overflow-hidden">
           <div className=" divide-y divide-dashed divide-white/35 ">
             {YEARS.map((year, idx) => {
               const isOpen = openYearIndex === idx

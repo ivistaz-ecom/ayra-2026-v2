@@ -40,19 +40,19 @@ const Carousel = () => {
     <section className="w-full py-10 md:py-14 ">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <h3 className="font-schabo uppercase text-[#FF8281] text-[56px] md:text-[84px] leading-[0.9]">
-          Specialisation Focus Areas
+          Specialisation / Focus Areas
         </h3>
         <p className="mt-4 font-tthoves-light text-black/80 text-[14px] md:text-[18px]">
-          Students gain knowledge and practical expertise across key areas of
-          design and communication:
+          Students develop skills across key areas of contemporary design and
+          communication:
         </p>
 
         <div className="mt-8">
           <Slider {...settings}>
-            {items.map((item) => (
-              <div key={item.title} className="px-2 md:px-3">
-                <div className="border border-dashed border-[#B5B5B5] px-4 md:px-6 py-5 md:py-6 h-48 flex items-center justify-center">
-                  <p className="font-schabo text-[#FF4D48] text-[42px] md:text-[56px] leading-[0.95] text-center">
+            {items.map((item, index) => (
+              <div key={`${index}-${item.title}`} className="px-2 md:px-3">
+                <div className="border border-dashed border-[#B5B5B5] px-4 md:px-6 py-5 md:py-6">
+                  <p className="font-schabo text-[#FF4D48] text-[42px] md:text-[32px] leading-[0.95] text-center break-words">
                     {item.title}
                   </p>
                 </div>
@@ -60,6 +60,11 @@ const Carousel = () => {
             ))}
           </Slider>
         </div>
+
+        <p className="mt-8 font-tthoves-light text-black/80 text-[14px] md:text-[18px] leading-relaxed">
+          These areas help students create meaningful visual and communication
+          solutions across diverse media platforms.
+        </p>
       </div>
     </section>
   )

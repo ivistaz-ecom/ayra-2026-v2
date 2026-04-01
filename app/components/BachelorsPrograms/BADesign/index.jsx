@@ -4,7 +4,7 @@ import Description from "./Description"
 import Recognised from "./Recognised"
 import Different from "./Different"
 import Scrolling from "./Scrolling"
-import EngeneeingAtAyra from "./EngeneeingAtAyra"
+import DesignAtAyra from "./DesignAtAyra"
 import Holistic from "./Holistic"
 import Carousel from "./Carousel"
 import Accordion from "./Accordion"
@@ -23,7 +23,7 @@ const BBAHospitalityManagement = () => {
       <Recognised />
       <Different />
       <Scrolling />
-      <EngeneeingAtAyra />
+      <DesignAtAyra />
       <Holistic />
       <Carousel />
       <Accordion />

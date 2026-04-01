@@ -83,7 +83,7 @@ const Career = () => {
       <div className="bg-[#002561] py-10 lg:py-10 border-t border-[#ffffff1f]">
         <div className="container mx-auto px-4 md:px-0 text-center">
         <Image
-              src="/school-of-engg-tech/bba-general/img2.webp"
+              src="/school-of-engg-tech/bba-general/img4.webp"
               width={700}
               height={450}
               alt="Students collaborating on a project"

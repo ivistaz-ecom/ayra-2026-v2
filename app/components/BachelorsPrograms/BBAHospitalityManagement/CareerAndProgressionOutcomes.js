@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import React, { useState } from "react"
 
 const careerRoles = [
@@ -84,9 +85,16 @@ const CareerAndProgressionOutcomes = () => {
                         {item.content.map((line, lineIdx) => (
                           <li
                             key={`${item.title}-${lineIdx}-${line}`}
-                            className="font-tthoves-light text-white/90 text-sm md:text-base leading-snug"
+                            className="flex items-start gap-2 font-tthoves-light text-white/90 text-sm md:text-base leading-snug"
                           >
-                            + {line}
+                            <Image
+                              src="/rocket-icon.svg"
+                              width={14}
+                              height={14}
+                              alt="arrow icon"
+                              className="mt-0.5 h-3.5 w-3.5 shrink-0 rotate-45"
+                            />
+                            <span>{line}</span>
                           </li>
                         ))}
                       </ul>

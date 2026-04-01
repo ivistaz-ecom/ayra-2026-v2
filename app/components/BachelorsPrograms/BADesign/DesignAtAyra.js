@@ -28,8 +28,12 @@ const EngeneeingAtAyra = () => {
     <section className="w-full bg-[#FF4D48] py-6 md:py-7">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <h2 className="text-[#FFFFFF] text-[20px] md:text-[24px] leading-[1.2] max-w-[680px] text-left">
-        Design and Communication at AYRA unfolds as a journey of creativity, exploration, and applied practice.
+          Your Design Journey at AYRA
         </h2>
+        <p className="mt-3 text-[#FFFFFF] font-tthoves-light text-[15px] md:text-[16px] leading-[1.35] max-w-[680px] text-left">
+          Design and Communication at AYRA unfolds as a journey of creativity,
+          exploration, and applied practice.
+        </p>
 
         <div className="mt-5 grid grid-cols-1 items-start gap-y-5 md:grid-cols-2 md:gap-x-4 md:gap-y-6 lg:grid-cols-4 lg:gap-x-0">
           {yearJourney.map((item, index) => (

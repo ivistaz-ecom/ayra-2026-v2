@@ -4,13 +4,13 @@ import Description from './Description'
 import Recognised from './Recognised'
 import Different from './Different'
 import Scrolling from './Scrolling'
-import EngeneeingAtAyra from './EngeneeingAtAyra'
+import CulinaryArtsatAYRA from './CulinaryArtsatAYRA'
 import Holistic from './Holistic'
 import Carousel from './Carousel'
 import Accordion from './Accordion'
 import ProgramHighlights from './ProgramHighlights'
 import Specialisations from './Specialisations'
-import EngineeringLabs from './EngineeringLabs'
+import CulinaryLabs from './CulinaryLabs'
 import ValueAddedLearning from './ValueAddedLearning'
 import CareerAndProgressionOutcomes from './CareerAndProgressionOutcomes'
 import StartingYourJourney from './StartingYourJourney'
@@ -23,13 +23,13 @@ const index = () => {
     <Recognised />
     <Different />
     <Scrolling />
-    <EngeneeingAtAyra />
+    <CulinaryArtsatAYRA />
     <Holistic />
     <Carousel />
     <Accordion />
     <ProgramHighlights />
     <Specialisations />
-    <EngineeringLabs />
+    <CulinaryLabs />
     <ValueAddedLearning />
     <CareerAndProgressionOutcomes />
     <StartingYourJourney />
