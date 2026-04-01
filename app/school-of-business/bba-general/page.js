@@ -1,5 +1,5 @@
-import React from 'react'
-import BBA from '../../components/SchoolOfEngTech/BBA'
+import React from "react"
+import BBA from "../../components/SchoolOfEngTech/BBA"
 
 const page = () => {
   return (
