@@ -8,7 +8,7 @@ const Ayraadapt = () => {
       <div className="mb-10">
         <div className="relative w-full container mx-auto my-4">
           {/* Background Image */}
-          <div className="h-[500px] md:h-[600px] lg:h-[700px]">
+          <div className="h-[70vh] lg:h-[80vh]">
             <Image
               src="/school-of-engg-tech/bba-general/img3.webp"
               alt="Who Can Apply Background"
@@ -27,21 +27,26 @@ const Ayraadapt = () => {
             />
           </div>
           {/* Overlay Content */}
-          <div className="absolute lg:bottom-24 bottom-20 lg:left-[55%] left-[0%] flex items-center">
+          <div className="absolute lg:bottom-10 bottom-8 lg:left-[55%] left-[0%] flex items-center">
             <div className=" text-white px-5">
-              <p className="lg:text-base text-sm px-4">
-                At AYRA, your education isn’t just about degrees—it’s about
-                discovery, challenge, and self-expression.From state-of-the-art
-                sports facilities and sports team to performing arts,
-                student-led clubs, and leadership programs, AYRA ensures that
-                your learning experience is as dynamic as you are.
+            
+              <p className="lg:text-base text-sm px-4 mt-4">
+                To apply for the BBA program, students must have completed 12th
+                grade from a recognised board with a minimum of 50% marks.
               </p>
 
-              <p className="lg:text-base text-sm px-4">
-              This is your university experience. You choose how to shape it.
+              <p className="lg:text-base text-sm px-4 mt-4">
+                Admissions are based on the University&apos;s eligibility
+                guidelines and may consider performance in recognised entrance
+                tests or qualifying assessments, where applicable.
+              </p>
+              <p className="lg:text-base text-sm px-4 mt-4">
+                Admission is confirmed after document verification,
+                registration, and payment of the required fees within the given
+                timelines, as per University norms.
               </p>
               <div className="pt-5 px-4" >
-                <HoverButton5 text="Know more" />
+                <HoverButton5 text="Apply Now" />
               </div>
             </div>
           </div>

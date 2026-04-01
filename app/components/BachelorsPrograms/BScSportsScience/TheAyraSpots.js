@@ -9,7 +9,7 @@ const Ayraadapt = () => {
         <div className="lg:mb-16 ">
           <div className="relative w-full  my-4">
             {/* Background Image */}
-            <div className="h-[100vh]  lg:h-[100vh]">
+            <div className="h-[80vh]  lg:h-[80vh]">
               <Image
                 src="/school-of-engg-tech/bsc-in-sport/img5.webp"
                 alt="Who Can Apply Background"

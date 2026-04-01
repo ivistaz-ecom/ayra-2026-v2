@@ -1,13 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 
-const highlights = [
-  'Offered by AYRA (Deemed-to-be University)',
-  'Program designed in alignment with Outcome Based Education (OBE) principles',
-  'Curriculum aligned with industry practice and emerging business trends',
-  'Integrates case-based learning, internships, and interdisciplinary exposure',
-]
-
 const Recognised = () => {
   return (
     <section className="w-full border-y border-dashed border-[#8E8E8E] py-6 md:py-10">
@@ -22,20 +15,11 @@ const Recognised = () => {
               Credible.
             </h2>
 
-            <ul className="mt-6 space-y-4 text-black font-tthoves-light text-sm md:text-base">
-              {highlights.map((item) => (
-                <li key={item} className="flex items-start gap-2">
-                  <Image
-                    src="/rocket-icon.svg"
-                    width={18}
-                    height={18}
-                    alt="bullet icon"
-                    className="mt-1 h-4 w-4 shrink-0 rotate-45"
-                  />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
+            <p className="mt-6 max-w-[460px] text-black font-tthoves-light text-sm md:text-base leading-tight">
+              The program is offered under a recognised institutional and
+              regulatory framework that adheres to established quality
+              standards in higher education as per AICTE.
+            </p>
           </div>
 
           <div className="py-[5px]">
