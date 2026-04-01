@@ -10,8 +10,17 @@ const items = [
   { title: "Business Foundation" },
   { title: "Major Core" },
   { title: "Major Elective" },
- 
-  
+  { title: "Minor (Optional)" },
+  { title: "Proficiency Core (Ability Enhancement Courses)" },
+  { title: "Professional Skills (Skill Enhancement Courses)" },
+  { title: "Open Electives" },
+  { title: "University Core (Value-Based Courses)" },
+  { title: "Sports & Wellness" },
+  { title: "Industry Integrated Learning" },
+  {
+    title:
+      "Service and Field Learning (LEAP - Learn | Engage | Apply | Progress)",
+  },
 ]
 
 const settings = {

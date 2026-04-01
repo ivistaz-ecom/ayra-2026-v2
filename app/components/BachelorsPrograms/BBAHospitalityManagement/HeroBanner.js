@@ -15,7 +15,7 @@ const HeroBanner = () => {
       <div className="relative w-full max-w-none bg-[#0098FF] overflow-hidden">
         <div className="hidden md:block w-full">
           <Image
-            src="/school-of-engg-tech/bba-hospitality/banner-desktop.webp"
+            src="/school-of-engg-tech/bba-hospitality/home-banner-desktop.webp"
             alt="Engg-and-Tech"
             width={1920}
             height={1080}

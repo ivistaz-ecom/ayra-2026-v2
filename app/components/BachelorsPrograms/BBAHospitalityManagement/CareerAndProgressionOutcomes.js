@@ -41,7 +41,7 @@ const CareerAndProgressionOutcomes = () => {
       <div className="container mx-auto px-4 md:px-0">
         <div>
           <div className="px-4 py-6 md:px-0 md:py-8 border-b border-dashed border-white/35">
-            <h2 className="font-schabo uppercase text-[#C9D1FF] text-[52px] md:text-[84px] leading-[0.95]">
+            <h2 className="font-schabo uppercase text-[#72D9FF] text-[52px] md:text-[84px] leading-[0.95]">
               Career and
               <br />
               Progression Outcomes

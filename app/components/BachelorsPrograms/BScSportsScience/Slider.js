@@ -40,18 +40,19 @@ const SpecialisationSlider = () => {
     <section className="w-full py-10 md:py-14 ">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <h3 className="font-schabo uppercase text-[#FFC349] text-[56px] md:text-[84px] leading-[0.9]">
-        SPECIALISATION FOCUS AREAS
+          Specialisation / Focus Areas
         </h3>
         <p className="mt-4 font-tthoves-light text-black/80 text-[14px] md:text-[18px]">
-        Students gain expertise across key areas of sports science and human performance:
+          Students gain expertise across key areas of sports science and human
+          performance:
         </p>
 
         <div className="mt-8">
           <Slider {...settings}>
-            {items.map((item) => (
-              <div key={item.title} className="px-2 md:px-3">
-                <div className="border border-dashed border-[#B5B5B5] px-4 md:px-6 py-5 md:py-6 h-48 flex items-center justify-center">
-                  <p className="font-schabo text-[#FFA300] text-[42px] lg:text-[56px] leading-[0.95]">
+            {items.map((item, index) => (
+              <div key={`${index}-${item.title}`} className="px-2 md:px-3">
+                <div className="border border-dashed border-[#B5B5B5] px-4 md:px-6 py-5 md:py-6 h-28 flex items-center justify-center">
+                  <p className="font-schabo text-[#FFA300] text-[42px] md:text-[25px] leading-[0.95] text-center break-words">
                     {item.title}
                   </p>
                 </div>
@@ -59,8 +60,6 @@ const SpecialisationSlider = () => {
             ))}
           </Slider>
         </div>
-
-        
       </div>
     </section>
   )

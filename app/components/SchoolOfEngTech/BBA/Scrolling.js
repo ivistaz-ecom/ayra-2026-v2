@@ -13,34 +13,26 @@ const images = [
   "/opencanvas/rocket7.png",
 ]
 
-const headings = [
-  "YOUR BBA JOURNEY AT AYRA",
-  "What kind of flexibility do you need?",
-  "How do you see yourself applying what you learn?",
-  "How important is experiential learning to you?",
-  "Are you interested in earning certifications alongside your degree?",
-  "Do you see sports as part of your future?",
-  "What kind of campus experience excites you?",
-]
+const journeyTitle = "YOUR BBA JOURNEY AT AYRA"
 
-const subtitles = [
-  "Day 0",
-  "Day 1",
-  "Day 2",
-  "Day 3",
-  "Day 4",
-  "Day 5",
-  "Day 6",
-]
-
-const descriptions = [
-  "Regular Entry to BBA Program",
-  "I’d love to explore different subjects before deciding on my final path",
-  "I want to launch something of my own—a startup, a business, or a big idea",
-  "I learn by doing—hands-on projects and real-world applications",
-  "Absolutely—certifications that give me a career edge sound great",
-  "Yes! I want to build a career in sports or a related industry",
-  "A 24/7 learning space where I can explore ideas whenever inspiration hits ",
+const milestones = [
+  { label: "Day 0", text: "Regular Entry to BBA Program" },
+  {
+    label: "Year 1",
+    text: "Exit with a Certificate in Management. 40 Credits, Business Fundamentals, Professional Skill courses.",
+  },
+  {
+    label: "Year 2",
+    text: "Exit with a Diploma in Management. 80 Credits, Business Fundamentals, Major, Professional Skill, and industry integrated experiential learning.",
+  },
+  {
+    label: "Year 3",
+    text: "Exit with BBA Degree. 120+ Credits, Business Essentials, Major and/or Minor, Professional Skill, industry integrated, experiential learning.",
+  },
+  {
+    label: "Year 4",
+    text: "Exit with BBA (Honors/with Research) Degree. 160+ Credits, Business Essentials, Major and/or Minor, Professional Skill, industry integrated, experiential learning, real-time industry integrated research. Option to gain entry directly to PhD.",
+  },
 ]
 
 export default function PaperFoldingScroll() {
@@ -59,7 +51,7 @@ export default function PaperFoldingScroll() {
 
       const scrollY = window.scrollY
       const trackTop = trackEl.getBoundingClientRect().top + scrollY
-      const maxIndex = headings.length - 1
+      const maxIndex = milestones.length - 1
       const step = scrollPerSectionRef.current || 1
       const scrollOffset = scrollY - trackTop
 
@@ -102,7 +94,7 @@ export default function PaperFoldingScroll() {
   }, [])
 
   const trackHeight = `calc(100vh + ${
-    (headings.length - 1) * scrollPerSection
+    (milestones.length - 1) * scrollPerSection
   }px)`
 
   return (
@@ -136,13 +128,13 @@ export default function PaperFoldingScroll() {
           <div className="w-full md:w-[70%] flex flex-col justify-center md:pr-4 relative text-left">
             <div className="h-auto">
               <h2 className="text-2xl md:text-[60px] uppercase text-[#002561] mb-4 leading-tight font-schabo">
-                {headings[activeIndex]}
+                {journeyTitle}
               </h2>
               <h3 className="text-xl lg:text-3xl text-black font-bold mb-2">
-                {subtitles[activeIndex]}
+                {milestones[activeIndex].label}
               </h3>
               <p className="text-base md:text-xl text-black font-medium">
-                {descriptions[activeIndex]}
+                {milestones[activeIndex].text}
               </p>
             </div>
           </div>

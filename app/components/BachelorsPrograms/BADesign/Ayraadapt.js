@@ -16,28 +16,29 @@ const Ayraadapt = () => {
               priority
             />
             <Image
-              src="/school-of-engg-tech/ba-design/banner-mobile.webp"
+              src="/school-of-engg-tech/ba-design/img5.webp"
               width={900}
               height={520}
               alt="Admissions and eligibility — B.A. Design and Communication at AYRA"
-              className="block md:hidden w-full h-auto"
+              className="block md:hidden w-full h-[158vh]"
+              object-cover
               priority
             />
 
             {/* Mobile overlay */}
             <div className="absolute inset-0 flex md:hidden items-end justify-center px-5 pb-10">
               <div className="w-full text-left">
-                <p className="font-tthoves-bold text-white text-[15px] leading-snug">
+                <p className="font-tthoves-bold text-white text-[14px] leading-snug">
                   Admissions &amp; Eligibility
                 </p>
-                <p className="mt-1 font-tthoves-light text-white text-[15px] leading-snug">
+                <p className="mt-1 font-tthoves-light text-white text-[14px] leading-snug">
                   Duration: 3 or 4 years (Honours)
                 </p>
 
-                <h3 className="mt-4 font-tthoves-bold text-white text-[15px] leading-snug">
+                <h3 className="mt-4 font-tthoves-bold text-white text-[14px] leading-snug">
                   Eligibility Criteria
                 </h3>
-                <ul className="mt-2 space-y-2 font-tthoves-light text-white text-[15px] leading-snug">
+                <ul className="mt-2 space-y-2 font-tthoves-light text-white text-[14px] leading-snug">
                   <li className="flex items-start gap-2">
                     <Image
                       src="/rocket-icon.svg"
@@ -60,7 +61,9 @@ const Ayraadapt = () => {
                       alt="arrow icon"
                       className="mt-0.5 h-3.5 w-3.5 shrink-0 rotate-45"
                     />
-                    <span>Students from any academic stream are eligible to apply.</span>
+                    <span>
+                      Students from any academic stream are eligible to apply.
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Image
@@ -92,10 +95,10 @@ const Ayraadapt = () => {
                   </li>
                 </ul>
 
-                <h3 className="mt-4 font-tthoves-bold text-white text-[15px] leading-snug">
+                <h3 className="mt-4 font-tthoves-bold text-white text-[14px] leading-snug">
                   Admission Process
                 </h3>
-                <ul className="mt-2 space-y-2 font-tthoves-light text-white text-[15px] leading-snug">
+                <ul className="mt-2 space-y-2 font-tthoves-light text-white text-[14px] leading-snug">
                   <li className="flex items-start gap-2">
                     <Image
                       src="/rocket-icon.svg"
@@ -173,7 +176,9 @@ const Ayraadapt = () => {
                       alt="arrow icon"
                       className="mt-0.5 h-3.5 w-3.5 shrink-0 rotate-45"
                     />
-                    <span>Students from any academic stream are eligible to apply.</span>
+                    <span>
+                      Students from any academic stream are eligible to apply.
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Image
