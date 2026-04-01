@@ -1,0 +1,59 @@
+import React from "react"
+
+const yearJourney = [
+  {
+    title: "Aspire - Foundations of Psychology (Year 1)",
+    description:
+      "Build an understanding of human behaviour, development, basic theories, and research fundamentals.",
+  },
+  {
+    title: "Yearn - Core Psychological Perspectives (Year 2)",
+    description:
+      "Explore cognition, social behaviour, personality, and abnormal psychology.",
+  },
+  {
+    title: "Relish - Applied Psychology & Exposure (Year 3)",
+    description:
+      "Develop practical understanding through counseling psychology, organisational psychology, research, and field exposure.",
+  },
+  {
+    title: "Achieve - Advanced Study (Optional Year 4 - Honours)",
+    description:
+      "Pursue deeper research, specialised study, and advanced application in psychology.",
+  },
+]
+
+const EngeneeingAtAyra = () => {
+  return (
+    <section className="w-full bg-[#FF4D48] py-6 md:py-7">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+        <h2 className="text-[#FFFFFF] text-[20px] md:text-[24px] leading-[1.2] max-w-[680px] text-left">
+          Psychology at AYRA unfolds as a journey of understanding, reflection,
+          and application.
+        </h2>
+
+        <div className="mt-5 grid grid-cols-1 gap-y-5 md:grid-cols-2 md:gap-x-4 md:gap-y-6 lg:grid-cols-4 lg:gap-x-0">
+          {yearJourney.map((item, index) => (
+            <div
+              key={item.title}
+              className={`py-2 pr-0 text-left md:pr-5 lg:pr-6 ${
+                index !== yearJourney.length - 1
+                  ? "lg:border-r lg:border-dotted lg:border-[#FFB2B7] lg:mr-5"
+                  : ""
+              }`}
+            >
+              <h3 className="text-[#FFB2B7] font-tthoves-bold text-[20px] md:text-[18px] leading-[1.2]">
+                {item.title}
+              </h3>
+              <p className="mt-2 text-[#FFFFFF] font-tthoves-light text-[15px] md:text-[16px] leading-[1.35]">
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default EngeneeingAtAyra
