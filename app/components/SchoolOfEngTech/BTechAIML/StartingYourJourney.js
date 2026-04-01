@@ -56,25 +56,61 @@ const StartingYourJourney = () => {
               <h3 className="mt-3 font-tthoves-bold text-[12px] sm:text-xs md:text-sm text-left">
                 Eligibility Criteria:
               </h3>
-              <ul className="mt-1 space-y-1.5 list-disc pl-4 sm:pl-5 font-tthoves-light text-[11px] sm:text-[12px] md:text-[12px] leading-relaxed text-left">
-                <li>
+              <ul className="mt-1 space-y-1.5 font-tthoves-light text-[11px] sm:text-[12px] md:text-[12px] leading-relaxed text-left">
+                <li className="flex items-start gap-2">
+                  <Image
+                    src="/rocket-icon.svg"
+                    width={14}
+                    height={14}
+                    alt="arrow icon"
+                    className="mt-0.5 h-3.5 w-3.5 shrink-0 rotate-45"
+                  />
+                  <span>
                   Completion of 10+2 or equivalent examination with Physics,
                   Mathematics and Computer Science/Chemistry/Electronics/Bio-Technology/Technical
                   Vocational subject or equivalent, securing a minimum of 50%
                   marks in aggregate (in the three core subjects identified
                   above).
+                  </span>
                 </li>
-                <li>
+                <li className="flex items-start gap-2">
+                  <Image
+                    src="/rocket-icon.svg"
+                    width={14}
+                    height={14}
+                    alt="arrow icon"
+                    className="mt-0.5 h-3.5 w-3.5 shrink-0 rotate-45"
+                  />
+                  <span>
                   In case of SC/ST/OBC/Category I candidates, there is a
                   relaxation of 5% in the aggregate of marks obtained in the
                   board Exams.
+                  </span>
                 </li>
-                <li>
+                <li className="flex items-start gap-2">
+                  <Image
+                    src="/rocket-icon.svg"
+                    width={14}
+                    height={14}
+                    alt="arrow icon"
+                    className="mt-0.5 h-3.5 w-3.5 shrink-0 rotate-45"
+                  />
+                  <span>
                   JEE / COMEDK / UGET (Common Entrance Test) scores or Karnataka
                   CET scores and SAT or equivalent foreign entrance tests
                   (wherever applicable)
+                  </span>
                 </li>
-                <li>Good communication skills are preferred.</li>
+                <li className="flex items-start gap-2">
+                  <Image
+                    src="/rocket-icon.svg"
+                    width={14}
+                    height={14}
+                    alt="arrow icon"
+                    className="mt-0.5 h-3.5 w-3.5 shrink-0 rotate-45"
+                  />
+                  <span>Good communication skills are preferred.</span>
+                </li>
               </ul>
 
               <h3 className="mt-3 font-tthoves-bold text-[12px] sm:text-xs md:text-sm text-left">

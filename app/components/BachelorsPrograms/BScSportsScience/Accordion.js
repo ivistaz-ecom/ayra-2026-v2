@@ -4,19 +4,19 @@ import React, { useState } from "react"
 
 const SemesterColumn = ({ title, items, showItems }) => {
   return (
-    <div className=" py-6 text-center">
-      <div className="font-schabo text-white text-[18px] md:text-[22px]">
+    <div className="py-3 px-1.5 sm:px-2 md:py-6 md:px-0 text-left flex flex-col items-start md:items-center md:text-center">
+      <div className="font-schabo text-white text-[13px] sm:text-[15px] md:text-[18px] lg:text-[22px] leading-tight w-full md:w-auto text-left md:text-center">
         {title}
       </div>
 
       {showItems ? (
-        <ul className="mt-6 flex flex-col divide-y divide-dashed divide-white/40">
+        <ul className="mt-3 md:mt-6 w-full flex flex-col divide-y divide-dashed divide-white/40">
           {items.map((item) => (
             <li
               key={item}
-              className="py-2 text-white/90 font-tthoves-light text-[11px] md:text-[16px] leading-tight"
+              className="py-2 text-white/90 font-tthoves-light text-[11px] sm:text-[12px] md:text-[16px] leading-snug sm:leading-tight text-left md:text-center"
             >
-              <span className="whitespace-pre-line block">{item}</span>
+              <span className="whitespace-pre-line block text-left md:text-center">{item}</span>
             </li>
           ))}
         </ul>
@@ -41,7 +41,7 @@ const YearBlock = ({
     <button
       type="button"
       onClick={onToggle}
-      className="w-full text-left focus-visible:outline-none"
+      className="w-full text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 focus-visible:ring-offset-2 focus-visible:ring-offset-[#FFA300]"
       aria-expanded={isOpen}
     >
       <div className="hidden md:grid grid-cols-[120px_1fr_1fr] divide-x divide-dashed divide-white/35">
@@ -73,36 +73,40 @@ const YearBlock = ({
         />
       </div>
 
-      <div className="md:hidden py-6">
-        <div className="px-4">
-          <div className="font-schabo text-white/20 text-[56px] leading-[0.85]">
+      <div className="md:hidden min-h-[4.5rem]">
+        <div className="flex flex-col items-start justify-start text-left py-3 px-1 sm:px-2">
+          <div className="font-schabo text-[#FFD87B] text-[22px] sm:text-[26px] leading-[0.9] tracking-tight w-full text-center">
             {yearLabel}
           </div>
           {isOpen ? (
             <>
-              <div className="mt-2 font-schabo uppercase text-white text-[24px] leading-[1]">
+              <div className="mt-2 font-schabo uppercase text-white text-[15px] sm:text-[17px] leading-[1]">
                 {phaseLabel}
               </div>
-              <p className="mt-3 font-tthoves-light text-white/75 text-[13px] leading-relaxed">
+              <p className="mt-1.5 font-tthoves-light text-white/80 text-[10px] sm:text-[11px] leading-snug px-0.5">
                 {phaseNote}
               </p>
             </>
           ) : null}
         </div>
 
-        <div className="mt-5">
-          <SemesterColumn
-            title={semester1Title}
-            items={semesters[0]}
-            showItems={isOpen}
-          />
-          <div className="mt-4" />
-          <SemesterColumn
-            title={semester2Title}
-            items={semesters[1]}
-            showItems={isOpen}
-          />
-        </div>
+        {isOpen ? (
+          <>
+            <div className="w-full border-t border-dashed border-white/35 my-3" />
+            <div className="grid grid-cols-2 w-full divide-x divide-dashed divide-white/35 items-stretch">
+              <SemesterColumn
+                title={semester1Title}
+                items={semesters[0]}
+                showItems={true}
+              />
+              <SemesterColumn
+                title={semester2Title}
+                items={semesters[1]}
+                showItems={true}
+              />
+            </div>
+          </>
+        ) : null}
       </div>
     </button>
   )

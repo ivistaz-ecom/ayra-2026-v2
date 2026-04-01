@@ -59,63 +59,41 @@ const Recognised = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-start md:items-center">
           <div>
             <h2 className="font-schabo uppercase text-[#FFB2B7] text-[58px] md:text-[96px] leading-[0.9]">
-              Hospitality
+              Creative Studios &
               <br />
-              Training Labs
+              Media Labs
             </h2>
 
             <p className="mt-5 font-tthoves-light text-white/85 text-[14px] md:text-[18px] leading-relaxed max-w-[640px]">
-              AYRA provides dedicated hospitality training facilities that
-              simulate professional environments.
+              AYRA supports design and communication learning through dedicated
+              creative spaces designed for experimentation and collaboration.
             </p>
 
-            <h3 className="mt-6 font-tthoves-medium text-white text-[24px] lg:text-[30px] leading-[1.1] max-w-[650px]">
-              The range of courses offered to you across the programs includes:
-            </h3>
-
-            <ul className="mt-5 space-y-2 text-sm lg:text-[14px]">
-              {[
-                "Basic Training Kitchen",
-                "Advanced Training Kitchen",
-                "Demonstration Kitchen",
-                "Training Restaurant",
-                "Bakery and Confectionery Laboratory",
-                "Mock Front Office",
-                "Mock Guest Room (Mock Bedroom)",
-              ].map((item) => (
-                <li
-                  key={item}
-                  className="flex items-start gap-2 text-white/85 font-tthoves-light text-[16px] leading-[1.3]"
-                >
-                  <Image
-                    src="/rocket-icon.svg"
-                    width={16}
-                    height={16}
-                    alt="bullet icon"
-                    className="mt-1 h-3 w-3 md:h-4 md:w-4 shrink-0 rotate-45"
-                  />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-
-            <p className="mt-7 font-tthoves-light text-white/85 text-[13px] md:text-[17px] leading-relaxed max-w-[700px]">
-              These environments replicate real hospitality settings where
-              students learn culinary techniques, restaurant operations, front
-              office management, and housekeeping practices.
+            <p className="mt-4 md:mt-5 font-tthoves-light text-white/85 text-[13px] md:text-[17px] leading-relaxed max-w-[700px]">
+              Students gain access to design studios, storytelling labs, and
+              media production spaces where they work on visual communication,
+              content creation, and media projects.
             </p>
-            <p className="mt-5 font-tthoves-light text-white/85 text-[13px] md:text-[17px] leading-relaxed max-w-[700px]">
-              The facilities allow students to develop practical skills required
-              in hotels, resorts, and hospitality enterprises.
+
+            <p className="mt-4 md:mt-5 font-tthoves-light text-white/85 text-[13px] md:text-[17px] leading-relaxed max-w-[700px]">
+              These environments allow students to explore ideas, test concepts,
+              and develop creative work across formats. Studio-based learning
+              introduces students to the iterative and collaborative nature of
+              design practice.
+            </p>
+
+            <p className="mt-4 md:mt-5 font-tthoves-light text-white/85 text-[13px] md:text-[17px] leading-relaxed max-w-[700px]">
+              These facilities create an environment where ideas evolve into
+              visual narratives and communication solutions.
             </p>
           </div>
 
           <div className="md:pt-0 flex items-center">
             <Image
-             src="/school-of-engg-tech/bba-general/img1.webp"
+              src="/school-of-engg-tech/bba-general/img1.webp"
               width={900}
               height={620}
-              alt="Students in hospitality training lab"
+              alt="Creative studios and media labs at AYRA"
               className="w-full h-auto object-cover"
             />
           </div>

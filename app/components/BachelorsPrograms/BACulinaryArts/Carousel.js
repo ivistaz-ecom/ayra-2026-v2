@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
 const items = [
-  { title: "Engineering Foundation" },
+  { title: "Culinary Foundations" },
   { title: "Major Core" },
   { title: "Major Elective" },
   { title: "Minor (Optional)" },
@@ -60,7 +60,7 @@ const Carousel = () => {
             >
               <div className="h-full flex items-center justify-center">
                 <div className="h-full w-full border-2 border-dashed border-[#D6D6D6] bg-white/90 px-4 sm:px-6 md:px-10 py-4 flex items-center justify-center">
-                  <div className="font-schabo text-[#744AC6] text-[23px] sm:text-[25px] md:text-[27px] lg:text-[29px] leading-[1.08] text-center w-full">
+                  <div className="font-schabo text-[#FF5EBB] text-[23px] sm:text-[25px] md:text-[27px] lg:text-[29px] leading-[1.08] text-center w-full">
                     {item.title}
                   </div>
                 </div>

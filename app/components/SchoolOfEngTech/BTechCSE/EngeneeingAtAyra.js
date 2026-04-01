@@ -36,13 +36,13 @@ const EngeneeingAtAyra = () => {
           {yearJourney.map((item, index) => (
             <div
               key={item.title}
-              className={`py-1 sm:py-2 text-left sm:pr-3 md:pr-5 lg:pr-6 ${
+              className={`py-1 sm:py-2 text-left sm:pr-3 md:pr-5 lg:pr-6 flex flex-col h-full ${
                 index !== yearJourney.length - 1
                   ? "lg:border-r lg:border-dotted lg:border-[#92A0F0] lg:mr-5"
                   : ""
               }`}
             >
-              <h3 className="text-[#C7CEFF] font-tthoves-bold text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] leading-[1.25]">
+              <h3 className="text-[#C7CEFF] font-tthoves-bold text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] leading-[1.25] min-h-[40px] sm:min-h-[44px] md:min-h-[48px]">
                 {item.title}
               </h3>
               <p className="mt-2 text-[#D9DDFF] font-tthoves-light text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] leading-[1.35]">

@@ -29,7 +29,7 @@ const HeroBanner = () => {
       {/* Mobile Image */}
       <div className="block md:hidden w-full">
         <Image
-          src="/school-of-engg-tech/btech/Mobile-banner.png"
+          src="/school-of-engg-tech/btech-cse/Mobile-banner.png"
           alt="Engg-and-Tech"
           width={800}
           height={1000}

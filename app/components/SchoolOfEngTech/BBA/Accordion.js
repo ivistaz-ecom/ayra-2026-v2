@@ -4,8 +4,8 @@ import React, { useState } from "react"
 
 const SemesterColumn = ({ title, items, showItems }) => {
   return (
-    <div className="py-3 px-1.5 sm:px-2 md:py-6 md:px-0 text-center flex flex-col items-center">
-      <div className="font-schabo text-white text-[13px] sm:text-[15px] md:text-[18px] lg:text-[22px] leading-tight">
+    <div className="py-3 px-1.5 sm:px-2 md:py-6 md:px-0 text-left flex flex-col items-start md:items-center md:text-center">
+      <div className="font-schabo text-white text-[13px] sm:text-[15px] md:text-[18px] lg:text-[22px] leading-tight w-full md:w-auto text-left md:text-center">
         {title}
       </div>
 
@@ -14,9 +14,9 @@ const SemesterColumn = ({ title, items, showItems }) => {
           {items.map((item) => (
             <li
               key={item}
-              className="py-2 text-white/90 font-tthoves-light text-[11px] sm:text-[12px] md:text-[16px] leading-snug md:leading-tight text-center"
+              className="py-2 text-white/90 font-tthoves-light text-[11px] sm:text-[12px] md:text-[16px] leading-snug sm:leading-tight text-left md:text-center"
             >
-              <span className="whitespace-pre-line block text-center">{item}</span>
+              <span className="whitespace-pre-line block text-left md:text-center">{item}</span>
             </li>
           ))}
         </ul>
@@ -41,7 +41,7 @@ const YearBlock = ({
     <button
       type="button"
       onClick={onToggle}
-      className="w-full text-center md:text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0072C5]"
+      className="w-full text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0072C5]"
       aria-expanded={isOpen}
     >
       <div className="hidden md:grid grid-cols-[120px_1fr_1fr] divide-x divide-dashed divide-white/35">
@@ -73,8 +73,8 @@ const YearBlock = ({
         />
       </div>
 
-      <div className="md:hidden grid grid-cols-3 w-full divide-x divide-dashed divide-white/35 items-stretch min-h-[4.5rem]">
-        <div className="flex flex-col items-center justify-center text-center py-3 px-1 sm:px-2">
+      <div className="md:hidden min-h-[4.5rem]">
+        <div className="flex flex-col items-start justify-start text-left py-3 px-1 sm:px-2">
           <div className="font-schabo text-[#67D2FF] text-[22px] sm:text-[26px] leading-[0.9] tracking-tight">
             {yearLabel}
           </div>
@@ -90,16 +90,23 @@ const YearBlock = ({
           ) : null}
         </div>
 
-        <SemesterColumn
-          title={semester1Title}
-          items={semesters[0]}
-          showItems={isOpen}
-        />
-        <SemesterColumn
-          title={semester2Title}
-          items={semesters[1]}
-          showItems={isOpen}
-        />
+        {isOpen ? (
+          <>
+            <div className="w-full border-t border-dashed border-white/35 my-3" />
+            <div className="grid grid-cols-2 w-full divide-x divide-dashed divide-white/35 items-stretch">
+              <SemesterColumn
+                title={semester1Title}
+                items={semesters[0]}
+                showItems={true}
+              />
+              <SemesterColumn
+                title={semester2Title}
+                items={semesters[1]}
+                showItems={true}
+              />
+            </div>
+          </>
+        ) : null}
       </div>
     </button>
   )

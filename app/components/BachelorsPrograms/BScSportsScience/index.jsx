@@ -4,7 +4,7 @@ import Description from "./Description"
 import Recognised from "./Recognised"
 import Different from "./Different"
 import Scrolling from "./Scrolling"
-import EngeneeingAtAyra from "./EngeneeingAtAyra"
+import SportsScienceAtAyra from "./SportsScienceAtAyra"
 import Holistic from "./Holistic"
 import Carousel from "./Carousel"
 import Accordion from "./Accordion"
@@ -22,7 +22,7 @@ const BScSportsScience = () => {
       <Recognised />
       <Different />
       <Scrolling />
-      <EngeneeingAtAyra />
+      <SportsScienceAtAyra />
       <Holistic />
       <Carousel />
       <Accordion />
