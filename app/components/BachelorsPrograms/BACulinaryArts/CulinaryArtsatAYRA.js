@@ -42,10 +42,10 @@ const EngeneeingAtAyra = () => {
                   : ""
               }`}
             >
-              <h3 className="text-[#C7CEFF] font-tthoves-bold text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] leading-[1.25]">
+              <h3 className="text-[#FFBCDB] font-tthoves-bold text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] leading-[1.25]">
                 {item.title}
               </h3>
-              <p className="mt-2 text-[#D9DDFF] font-tthoves-light text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] leading-[1.35]">
+              <p className="mt-2 text-[#FFFFFF] font-tthoves-light text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] leading-[1.35]">
                 {item.description}
               </p>
             </div>

@@ -32,7 +32,7 @@ const HeroBanner = () => {
       {/* Mobile Image */}
       <div className="block md:hidden w-full">
         <Image
-          src="/school-of-engg-tech/btech/Mobile-banner.png"
+          src="/school-of-engg-tech/ba-culinary-arts/Mobile-banner.png"
           alt="Engg-and-Tech"
           width={800}
           height={1000}
@@ -55,7 +55,7 @@ const HeroBanner = () => {
         href="/schools/engg-and-tech"
         className="block md:hidden absolute left-[4%] sm:left-[6%] bottom-[4%] sm:bottom-[5%] lg:bottom-[8%] z-10"
       >
-        <span className="px-4 md:px-5 py-1 md:py-1.5 text-[13px] md:text-[14px] text-white bg-[#744AC6] inline-block leading-none">
+        <span className="px-4 md:px-5 py-1 md:py-1.5 text-[13px] md:text-[14px] text-white bg-[#FF5EBB] inline-block leading-none">
           Know More
         </span>
       </Link>
