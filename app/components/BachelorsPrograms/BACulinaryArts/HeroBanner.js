@@ -46,7 +46,7 @@ const HeroBanner = () => {
         href="/admissions/apply-now"
         className="hidden md:inline-block group absolute left-[4%] sm:left-[6%] bottom-[4%] sm:bottom-[5%] lg:bottom-[8%] z-10"
       >
-        <span className="relative px-4 sm:px-6 md:px-7 text-[13px] sm:text-[14px] md:text-[16px] 2xl:text-[20px] py-1 sm:py-1.5 bg-[#744AC6] group-hover:bg-[#744AC6] text-white overflow-hidden cursor-pointer transition-colors duration-300 inline-block leading-none">
+        <span className="relative px-4 sm:px-6 md:px-7 text-[13px] sm:text-[14px] md:text-[16px] 2xl:text-[20px] py-1 sm:py-1.5 bg-[#FF5EBB] group-hover:bg-[#FF5EBB] text-white overflow-hidden cursor-pointer transition-colors duration-300 inline-block leading-none">
           Apply Now
         </span>
       </Link>

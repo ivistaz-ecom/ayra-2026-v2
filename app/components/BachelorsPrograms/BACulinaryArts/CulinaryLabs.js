@@ -27,71 +27,71 @@ const EngineeringLabs = () => {
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
                   <Image
-                    src="/rocket-icon.svg"
+                    src="/school-of-engg-tech/ba-culinary-arts/arrow.svg"
                     width={16}
                     height={16}
                     alt="arrow icon"
-                    className="mt-1 h-4 w-4 shrink-0 rotate-45"
+                    className="mt-1 h-4 w-4 shrink-0"
                   />
                   <span>Basic Training Kitchen</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Image
-                    src="/rocket-icon.svg"
+                    src="/school-of-engg-tech/ba-culinary-arts/arrow.svg"
                     width={16}
                     height={16}
                     alt="arrow icon"
-                    className="mt-1 h-4 w-4 shrink-0 rotate-45"
+                    className="mt-1 h-4 w-4 shrink-0"
                   />
                   <span>Advanced Training Kitchen</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Image
-                    src="/rocket-icon.svg"
+                    src="/school-of-engg-tech/ba-culinary-arts/arrow.svg"
                     width={16}
                     height={16}
                     alt="arrow icon"
-                    className="mt-1 h-4 w-4 shrink-0 rotate-45"
+                    className="mt-1 h-4 w-4 shrink-0"
                   />
                   <span>Demonstration Kitchen</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Image
-                    src="/rocket-icon.svg"
+                    src="/school-of-engg-tech/ba-culinary-arts/arrow.svg"
                     width={16}
                     height={16}
                     alt="arrow icon"
-                    className="mt-1 h-4 w-4 shrink-0 rotate-45"
+                    className="mt-1 h-4 w-4 shrink-0"
                   />
                   <span>Training Restaurant</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Image
-                    src="/rocket-icon.svg"
+                    src="/school-of-engg-tech/ba-culinary-arts/arrow.svg"
                     width={16}
                     height={16}
                     alt="arrow icon"
-                    className="mt-1 h-4 w-4 shrink-0 rotate-45"
+                    className="mt-1 h-4 w-4 shrink-0"
                   />
                   <span>Bakery and Confectionery Laboratory</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Image
-                    src="/rocket-icon.svg"
+                    src="/school-of-engg-tech/ba-culinary-arts/arrow.svg"
                     width={16}
                     height={16}
                     alt="arrow icon"
-                    className="mt-1 h-4 w-4 shrink-0 rotate-45"
+                    className="mt-1 h-4 w-4 shrink-0"
                   />
                   <span>Mock Front Office</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Image
-                    src="/rocket-icon.svg"
+                    src="/school-of-engg-tech/ba-culinary-arts/arrow.svg"
                     width={16}
                     height={16}
                     alt="arrow icon"
-                    className="mt-1 h-4 w-4 shrink-0 rotate-45"
+                    className="mt-1 h-4 w-4 shrink-0"
                   />
                   <span>Mock Guest Room</span>
                 </li>

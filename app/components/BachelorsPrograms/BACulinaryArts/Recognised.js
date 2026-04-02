@@ -26,11 +26,11 @@ const Recognised = () => {
               {highlights.map((item) => (
                 <li key={item} className="flex items-start gap-2 text-left">
                   <Image
-                    src="/rocket-icon.svg"
+                    src="/school-of-engg-tech/ba-culinary-arts/arrow.svg"
                     width={18}
                     height={18}
                     alt="bullet icon"
-                    className="mt-1 h-4 w-4 shrink-0 rotate-45"
+                    className="mt-1 h-4 w-4 shrink-0"
                   />
                   <span>{item}</span>
                 </li>

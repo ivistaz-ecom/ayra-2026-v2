@@ -61,11 +61,11 @@ const StartingYourJourney = () => {
               <ul className="mt-1 space-y-1.5 font-tthoves-light text-[11px] sm:text-[12px] md:text-[12px] leading-relaxed text-left">
                 <li className="flex items-start gap-2">
                   <Image
-                    src="/rocket-icon.svg"
+                    src="/school-of-engg-tech/ba-culinary-arts/arrow.svg"
                     width={14}
                     height={14}
                     alt="arrow icon"
-                    className="mt-0.5 h-3.5 w-3.5 shrink-0 rotate-45"
+                    className="mt-0.5 h-3.5 w-3.5 shrink-0"
                   />
                   <span>
                     The candidate must have successfully completed 10+2 (Higher
@@ -75,21 +75,21 @@ const StartingYourJourney = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <Image
-                    src="/rocket-icon.svg"
+                    src="/school-of-engg-tech/ba-culinary-arts/arrow.svg"
                     width={14}
                     height={14}
                     alt="arrow icon"
-                    className="mt-0.5 h-3.5 w-3.5 shrink-0 rotate-45"
+                    className="mt-0.5 h-3.5 w-3.5 shrink-0"
                   />
                   <span>Students from any academic stream are eligible to apply.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Image
-                    src="/rocket-icon.svg"
+                    src="/school-of-engg-tech/ba-culinary-arts/arrow.svg"
                     width={14}
                     height={14}
                     alt="arrow icon"
-                    className="mt-0.5 h-3.5 w-3.5 shrink-0 rotate-45"
+                    className="mt-0.5 h-3.5 w-3.5 shrink-0"
                   />
                   <span>
                     Candidates with an interest in culinary arts, food
@@ -99,11 +99,11 @@ const StartingYourJourney = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <Image
-                    src="/rocket-icon.svg"
+                    src="/school-of-engg-tech/ba-culinary-arts/arrow.svg"
                     width={14}
                     height={14}
                     alt="arrow icon"
-                    className="mt-0.5 h-3.5 w-3.5 shrink-0 rotate-45"
+                    className="mt-0.5 h-3.5 w-3.5 shrink-0"
                   />
                   <span>
                     In case of SC/ST/OBC/Category I candidates, a 5% relaxation
