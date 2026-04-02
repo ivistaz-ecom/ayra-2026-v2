@@ -57,8 +57,8 @@ const Carousel = () => {
             {items.map((item) => (
               <div key={item.title} className="px-2 h-[38px] sm:h-[43px] md:h-[105px]">
                 <div className="h-full flex items-center justify-center">
-                  <div className="h-full w-full border-2 border-dashed border-[#D6D6D6] bg-white/90 px-2 sm:px-3 md:px-4 py-1 sm:py-1.5 md:py-2 flex items-center justify-center">
-                    <div className="font-schabo text-[#0072C5] text-[21px] sm:text-[22px] md:text-[27px] leading-[1.05] text-center">
+                  <div className="h-full w-full border-2 border-dashed border-[#D6D6D6] bg-white/90 px-2 sm:px-3 md:px-4 py-2 md:py-2 flex items-center justify-center">
+                    <div className="font-schabo text-[#0072C5]  text-[25px] md:text-[25px] leading-[1.05] text-center">
                       {item.title}
                     </div>
                   </div>
