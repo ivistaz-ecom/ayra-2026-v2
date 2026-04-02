@@ -16,7 +16,7 @@ const HeroBanner = () => {
     <div className="relative w-full max-w-none bg-[#2050B2] overflow-hidden">
       <div className="hidden md:block relative w-full md:h-[min(90vh,1080px)] lg:h-[90vh]">
         <Image
-          src="/school-of-engg-tech/btech-datascience/Banner-image.png"
+          src="/school-of-engg-tech/btech-datascience/banner-image.png"
           alt="Engg-and-Tech"
           width={1920}
           height={1080}
@@ -29,7 +29,7 @@ const HeroBanner = () => {
       {/* Mobile Image */}
       <div className="block md:hidden w-full">
         <Image
-          src="/school-of-engg-tech/btech-datascience/Mobile-banner.png"
+          src="/school-of-engg-tech/btech-datascience/mobile-banner.png"
           alt="Engg-and-Tech"
           width={800}
           height={1000}
