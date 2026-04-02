@@ -30,11 +30,11 @@ const ValueAddedLearning = () => {
               {points.map((point) => (
                 <li key={point} className="flex items-start gap-2 text-left">
                   <Image
-                    src="/rocket-icon.svg"
+                    src="/school-of-engg-tech/ba-culinary-arts/arrow.svg"
                     width={16}
                     height={16}
                     alt="bullet"
-                    className="mt-1 h-4 w-4 shrink-0 rotate-45"
+                    className="mt-1 h-4 w-4 shrink-0"
                   />
                   <span className="font-tthoves-light text-black text-sm md:text-base leading-snug">
                     {point}

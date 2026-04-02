@@ -16,11 +16,11 @@ const NotSureWhereToBegin = () => {
       </div>
 
       <div className="mt-8 border-t border-dashed border-[#2a72b7]">
-        <div className="container mx-auto px-4 md:px-0 pt-5 text-left">
+        <div className="container mx-auto px-4 md:px-0 pt-5 text-center">
           <p className="font-tthoves-demibold text-white text-[22px] sm:text-[26px] md:text-[30px] leading-tight">
             Give us five minutes on a call.
           </p>
-          <p className="mt-2 font-tthoves-light text-[#b4c8df] text-sm md:text-base max-w-md mx-0">
+          <p className="mt-2 font-tthoves-light text-[#b4c8df] text-sm md:text-base text-center mx-auto">
             Speak with the admissions team, explore your options, and see what
             could fit you best.
           </p>

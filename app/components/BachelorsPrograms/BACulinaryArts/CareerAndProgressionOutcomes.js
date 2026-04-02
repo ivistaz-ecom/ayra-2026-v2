@@ -44,7 +44,7 @@ const CareerAndProgressionOutcomes = () => {
       <div className="container mx-auto px-4 md:px-0">
         <div>
           <div className="py-4 sm:py-6 md:py-8 border-b border-dashed border-white/35 text-left">
-            <h2 className="font-schabo uppercase text-[#C9D1FF] text-[34px] sm:text-[42px] md:text-[56px] lg:text-[72px] xl:text-[84px] leading-[0.95]">
+            <h2 className="font-schabo uppercase text-[#FFBCDB] text-[34px] sm:text-[42px] md:text-[56px] lg:text-[72px] xl:text-[84px] leading-[0.95]">
               Career and
               <br />
               Progression Outcomes
@@ -91,11 +91,11 @@ const CareerAndProgressionOutcomes = () => {
                             className="flex items-start gap-2 font-tthoves-light text-white/90 text-xs sm:text-sm md:text-base leading-snug"
                           >
                             <Image
-                              src="/rocket-icon.svg"
+                              src="/school-of-engg-tech/ba-culinary-arts/arrow.svg"
                               width={14}
                               height={14}
                               alt="arrow icon"
-                              className="mt-0.5 h-3.5 w-3.5 shrink-0 rotate-45"
+                              className="mt-0.5 h-3.5 w-3.5 shrink-0"
                             />
                             <span>{line}</span>
                           </li>

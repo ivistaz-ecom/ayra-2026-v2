@@ -48,8 +48,8 @@ const Carousel = () => {
   return (
     <section className="w-full py-8 md:py-12">
       <div className="container mx-auto px-4 md:px-0">
-        <h3 className="font-tthoves-light text-black text-base sm:text-lg md:text-2xl lg:text-3xl mb-6 md:mb-8 text-left max-w-4xl mx-0">
-          The range of courses offered across the program includes:
+        <h3 className="font-tthoves-medium text-black text-base sm:text-lg md:text-2xl lg:text-3xl mb-6 md:mb-8 text-left max-w-4xl mx-0">
+          The range of courses offered across <br/> the program includes:
         </h3>
 
         <Slider {...settings}>
