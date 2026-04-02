@@ -1,19 +1,18 @@
 name: Deploy Staging
 
 on:
+  push:
+    branches: ["main"]
   workflow_dispatch:
-    inputs:
-      app_dir:
-        description: "Application directory"
-        required: true
-      pm2_name:
-        description: "PM2 process name"
-        required: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     environment: staging
+
+    env:
+      APP_DIR: /var/www/ayra-staging-v2
+      PM2_NAME: Ayra-Staging-V2
 
     steps:
       - name: Deploy via SSH
@@ -28,9 +27,6 @@ jobs:
 
           script: |
             set -e
-
-            APP_DIR="${{ github.event.inputs.app_dir }}"
-            PM2_NAME="${{ github.event.inputs.pm2_name }}"
 
             echo "➡️ Loading NVM"
             export NVM_DIR="$HOME/.nvm"
