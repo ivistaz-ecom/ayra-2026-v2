@@ -1,0 +1,58 @@
+name: Deploy Staging
+
+on:
+  workflow_dispatch:
+    inputs:
+      app_dir:
+        description: "Application directory"
+        required: true
+      pm2_name:
+        description: "PM2 process name"
+        required: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: staging
+
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
+          script_stop: true
+
+          script: |
+            set -e
+
+            APP_DIR="${{ github.event.inputs.app_dir }}"
+            PM2_NAME="${{ github.event.inputs.pm2_name }}"
+
+            echo "➡️ Loading NVM"
+            export NVM_DIR="$HOME/.nvm"
+            source "$NVM_DIR/nvm.sh"
+
+            echo "➡️ Moving to app directory"
+            cd $APP_DIR
+
+            echo "➡️ Git safe directory"
+            echo ${{ secrets.PASSWORD }} | sudo -S git config --global --add safe.directory $APP_DIR
+
+            echo "➡️ Pull latest code"
+            echo ${{ secrets.PASSWORD }} | sudo -S git fetch origin main
+            echo ${{ secrets.PASSWORD }} | sudo -S git reset --hard origin/main
+
+            echo "➡️ Install dependencies"
+            echo ${{ secrets.PASSWORD }} | sudo -S npm ci
+
+            echo "➡️ Build project"
+            echo ${{ secrets.PASSWORD }} | sudo -S npm run build
+
+            echo "➡️ Restart PM2"
+            echo ${{ secrets.PASSWORD }} | sudo -S pm2 restart $PM2_NAME
+
+            echo "✅ Deployment successful"
