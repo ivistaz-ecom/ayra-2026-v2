@@ -6,17 +6,17 @@ const Description = () => {
       <div className="container mx-auto flex flex-col gap-10 px-4 md:px-0">
         <div className="flex flex-col items-center">
           <div className="container mx-auto lg:border-l lg:border-r border-dashed border-[#8E8E8E] flex items-center justify-center flex-col text-center">
-            <p className="text-center lg:w-2/3 pt-4 font-tthoves-light">
+            <p className="text-center lg:w-2/3 pt-4 font-tthoves-demibold text-[18px]">
               Data Science at AYRA begins with asking the right questions.
             </p>
 
-            <p className="text-center lg:w-2/3 font-tthoves-light">
+            <p className="text-center lg:w-2/3 font-tthoves-light text-[18px]">
               The B.Tech in Data Science program at AYRA helps students build
               strong foundations in computing, statistics, and data analytics
               while connecting learning to real-world data challenges.
             </p>
 
-            <p className="text-center lg:w-2/3 pb-4 font-tthoves-light">
+            <p className="text-center lg:w-2/3 pb-4 font-tthoves-light text-[18px]">
               Students work with modern tools and technologies used in data
               analysis, statistical modelling, big data systems, and machine
               learning applications. The program combines technical knowledge

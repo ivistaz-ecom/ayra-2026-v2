@@ -42,7 +42,7 @@ const EngeneeingAtAyra = () => {
                   : ""
               }`}
             >
-              <h3 className="text-[#FFB2B7] font-tthoves-bold text-[20px] md:text-[18px] leading-[1.2]">
+              <h3 className="text-[#FFB2B7] font-tthoves-bold text-[20px] md:text-[18px] leading-[1.2] min-h-[56px] sm:min-h-[64px] md:min-h-[72px]">
                 {item.title}
               </h3>
               <p className="mt-2 text-[#FFFFFF] font-tthoves-light text-[15px] md:text-[16px] leading-[1.35]">

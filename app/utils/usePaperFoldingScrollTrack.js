@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react"
 
-export function usePaperFoldingScrollTrack(itemCount) {
+export function usePaperFoldingScrollTrack(itemCount, holdSections = 0) {
   const [activeIndex, setActiveIndex] = useState(0)
   const sectionRef = useRef(null)
   const trackRef = useRef(null)
@@ -61,7 +61,7 @@ export function usePaperFoldingScrollTrack(itemCount) {
   const trackHeight =
     itemCount <= 1
       ? "100vh"
-      : `calc(100vh + ${(itemCount - 1) * scrollPerSection}px)`
+      : `calc(100vh + ${((itemCount - 1) + holdSections) * scrollPerSection}px)`
 
   return {
     activeIndex,

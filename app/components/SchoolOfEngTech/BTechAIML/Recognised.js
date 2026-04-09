@@ -44,7 +44,7 @@ const Recognised = () => {
               width={886}
               height={746}
               alt="B.Tech programme recognition and accreditation"
-              className="w-full h-auto border border-[#4B8CE5]"
+              className="w-full h-auto"
             />
           </div>
         </div>

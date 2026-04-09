@@ -19,7 +19,7 @@ const HeroBanner = () => {
       {/* Desktop Image */}
       <div className="hidden md:block relative w-full md:h-[min(90vh,1080px)] lg:h-[90vh]">
         <Image
-          src="/school-of-engg-tech/btech/Desktop-banner.png"
+          src="/school-of-engg-tech/btech/Desktop-banner.webp"
           alt="Engg-and-Tech"
           width={1920}
           height={1080}
@@ -32,7 +32,7 @@ const HeroBanner = () => {
       {/* Mobile Image */}
       <div className="block md:hidden w-full">
         <Image
-          src="/school-of-engg-tech/btech/Mobile-banner.png"
+          src="/school-of-engg-tech/btech/Mobile-banner.webp"
           alt="Engg-and-Tech"
           width={800}
           height={1000}
