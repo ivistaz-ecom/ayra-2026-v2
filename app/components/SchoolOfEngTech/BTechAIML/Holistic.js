@@ -13,7 +13,7 @@ const Holistic = () => {
               At Ayra
             </h2>
 
-            <p className="mt-6 text-black font-tthoves-light text-sm md:text-base leading-relaxed max-w-[520px] mx-0">
+            <p className="mt-6 text-black font-tthoves-light text-[18px] leading-relaxed max-w-[520px] mx-0">
               At AYRA, engineering education is designed to be thoughtful,
               interdisciplinary, and forward-looking.
             </p>

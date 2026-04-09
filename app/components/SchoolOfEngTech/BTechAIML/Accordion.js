@@ -5,7 +5,7 @@ import React, { useState } from "react"
 const SemesterColumn = ({ title, items, showItems }) => {
   return (
     <div className="py-3 px-1.5 sm:px-2 md:py-6 md:px-0 text-left flex flex-col items-start md:items-center md:text-center">
-      <div className="font-schabo text-white text-[13px] sm:text-[15px] md:text-[18px] lg:text-[22px] leading-tight w-full md:w-auto text-left md:text-center">
+      <div className="font-tthoves-bold text-white text-[13px] sm:text-[15px] md:text-[18px] lg:text-[22px] leading-tight w-full md:w-auto text-left md:text-center">
         {title}
       </div>
 
@@ -46,7 +46,7 @@ const YearBlock = ({
     >
       <div className="hidden md:grid grid-cols-[120px_1fr_1fr] divide-x divide-dashed divide-white/35">
         <div className=" py-6 text-center">
-          <div className="font-schabo text-white/20 text-[56px] md:text-[72px] leading-[0.85]">
+          <div className="font-schabo text-white/20 text-[42px] md:text-[54px] leading-[1] whitespace-nowrap">
             {yearLabel}
           </div>
           {isOpen ? (
@@ -54,7 +54,7 @@ const YearBlock = ({
               <div className="mt-4 font-schabo uppercase text-white text-[24px] md:text-[30px] leading-[1]">
                 {phaseLabel}
               </div>
-              <p className="mt-4 font-tthoves-light text-white/75 text-[12px] md:text-[13px] leading-relaxed">
+              <p className="mt-4 font-tthoves-light text-white/75 text-[18px] leading-relaxed">
                 {phaseNote}
               </p>
             </>
@@ -76,7 +76,7 @@ const YearBlock = ({
       {/* Mobile: YEAR heading block, then (when open) 2-column sem content */}
       <div className="md:hidden min-h-[4.5rem]">
         <div className="flex flex-col items-start justify-start text-left py-3 px-1 sm:px-2">
-          <div className="font-schabo text-[#C9B4FF] text-[22px] sm:text-[26px] leading-[0.9] tracking-tight w-full text-center">
+          <div className="font-schabo text-[#C9B4FF] text-[20px] sm:text-[24px] leading-[1] tracking-tight w-full text-center whitespace-nowrap">
             {yearLabel}
           </div>
           {isOpen ? (
@@ -84,7 +84,7 @@ const YearBlock = ({
               <div className="mt-2 font-schabo uppercase text-white text-[15px] sm:text-[17px] leading-[1]">
                 {phaseLabel}
               </div>
-              <p className="mt-1.5 font-tthoves-light text-white/80 text-[10px] sm:text-[11px] leading-snug px-0.5">
+              <p className="mt-1.5 font-tthoves-light text-white/80 text-[18px] leading-snug px-0.5">
                 {phaseNote}
               </p>
             </>
@@ -235,12 +235,12 @@ const Accordion = () => {
           </h2>
 
           <div className="pt-0 md:pt-4 mx-0 max-w-[720px] w-full">
-            <p className="font-tthoves-light text-white text-[13px] sm:text-[14px] md:text-[18px] leading-relaxed">
+            <p className="font-tthoves-light text-white text-[18px] leading-relaxed">
               At AYRA, learning moves from foundational understanding to deeper
               exploration and applied experiences, giving students the space to
               grow into concepts rather than rush through them.
             </p>
-            <p className="mt-4 md:mt-6 font-tthoves-light text-white text-[13px] sm:text-[14px] md:text-[18px] leading-relaxed">
+            <p className="mt-4 md:mt-6 font-tthoves-light text-white text-[18px] leading-relaxed">
               The curriculum is organised across multiple semesters/terms,
               progressing from foundational concepts to advanced and applied
               learning.

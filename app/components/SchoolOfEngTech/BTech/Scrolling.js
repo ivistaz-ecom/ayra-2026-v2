@@ -14,6 +14,7 @@ const images = [
 ]
 
 const journeyTitle = "Your Engineering Journey at AYRA"
+const FINAL_HOLD_SECTIONS = 1
 
 const milestones = [
   { label: "Day 0", text: "Regular Entry to B.Tech Program" },
@@ -94,8 +95,11 @@ export default function PaperFoldingScroll() {
   }, [])
 
   const trackHeight = `calc(100vh + ${
-    (milestones.length - 1) * scrollPerSection
+    ((milestones.length - 1) + FINAL_HOLD_SECTIONS) * scrollPerSection
   }px)`
+  const imageIndex = Math.round(
+    (activeIndex / (milestones.length - 1)) * (images.length - 1)
+  )
 
   return (
     <div ref={trackRef} style={{ height: trackHeight }} className="relative">
@@ -108,7 +112,7 @@ export default function PaperFoldingScroll() {
           <div className="w-full md:w-[29%] flex flex-col items-center justify-center gap-2 mb-1 md:mb-0 shrink-0">
             <div className="relative w-48 h-48 sm:w-52 sm:h-52 md:w-72 md:h-72">
               <Image
-                src={images[activeIndex]}
+                src={images[imageIndex]}
                 alt={`Rocket ${activeIndex + 1}`}
                 className="w-full h-full object-contain"
                 width={160}
@@ -130,10 +134,10 @@ export default function PaperFoldingScroll() {
               <h2 className="text-[26px] sm:text-[34px] md:text-[56px] lg:text-[72px] xl:text-[78px] uppercase text-[#744AC4] mb-4 sm:mb-6 leading-[0.95] font-schabo">
                 {journeyTitle}
               </h2>
-              <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-[40px] text-[#0B0B0B] leading-tight font-tthoves-bold">
+              <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-[40px] text-[#0B0B0B] leading-tight pb-5 ">
                 {milestones[activeIndex].label}
               </h3>
-              <p className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-[28px] text-black font-tthoves-light leading-snug mt-2 md:mt-1">
+              <p className="text-[20px] text-black font-tthoves-light leading-snug mt-2 md:mt-1">
                 {milestones[activeIndex].text}
               </p>
             </div>

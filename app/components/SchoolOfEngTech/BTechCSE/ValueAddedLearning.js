@@ -22,7 +22,7 @@ const ValueAddedLearning = () => {
               Learning
             </h2>
 
-            <p className="mt-4 font-tthoves-light text-black text-sm md:text-base leading-snug max-w-xl mx-0">
+            <p className="mt-4 font-tthoves-light text-black text-[18px] leading-snug max-w-xl mx-0">
               Students enhance their learning experience through additional
               opportunities that strengthen both technical and professional
               capabilities.
@@ -38,7 +38,7 @@ const ValueAddedLearning = () => {
                     alt="bullet"
                     className="mt-1 h-4 w-4 shrink-0 rotate-45"
                   />
-                  <span className="font-tthoves-light text-black text-sm md:text-base leading-snug">
+                  <span className="font-tthoves-light text-black text-[16px] leading-snug">
                     {point}
                   </span>
                 </li>

@@ -46,7 +46,7 @@ const Specialisations = () => {
           Specialisation Focus Areas
         </h2>
 
-        <p className="mt-3 font-tthoves-light text-black text-sm md:text-base text-left max-w-[980px] mx-0">
+        <p className="mt-3 font-tthoves-light text-black text-[18px] text-left max-w-[980px] mx-0">
           Students gain expertise in key domains of artificial intelligence and
           machine learning, including:
         </p>

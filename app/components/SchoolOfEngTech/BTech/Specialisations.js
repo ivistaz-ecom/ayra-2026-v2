@@ -24,13 +24,13 @@ const Specialisations = () => {
           Specialisations
         </h2>
 
-        <p className="mt-4 font-tthoves-light text-black text-sm md:text-base max-w-[980px] text-left mx-0">
+        <p className="mt-4 font-tthoves-light text-black text-[18px] max-w-[980px] text-left mx-0">
           At AYRA, specialisations are approached with clarity. Students begin
           with strong engineering foundations and then choose focus areas
           aligned with their interests and career goals.
         </p>
 
-        <div className="mt-5 border border-dashed border-[#9BC8E7] p-4 sm:p-5 md:p-6 w-full md:max-w-[760px] mx-0">
+        <div className="mt-5 border border-dashed border-[#9BC8E7] p-4 sm:p-5 md:p-6 w-full md:max-w-[874px] mx-0">
           <h3 className="font-tthoves-bold text-black text-base sm:text-lg md:text-2xl text-left">
             Students may choose from the following B.Tech programs:
           </h3>
@@ -45,14 +45,14 @@ const Specialisations = () => {
                   alt="bullet"
                   className="mt-1 h-4 w-4 shrink-0 rotate-45"
                 />
-                <p className="font-tthoves-light text-black text-sm md:text-base">
+                <p className="font-tthoves-light text-black text-[18px]">
                   {program.title} : {program.text}
                 </p>
               </li>
             ))}
           </ul>
 
-          <p className="mt-4 font-tthoves-light text-black text-sm md:text-base">
+          <p className="mt-4 font-tthoves-light text-black text-[18px]">
             Each program provides strong computing foundations while offering
             specialized knowledge aligned with industry demands.
           </p>

@@ -17,7 +17,7 @@ const EngineeringLabs = () => {
 
             <div className="mt-4 border-t border-dotted border-white/50" />
 
-            <div className="mt-5 space-y-4 font-tthoves-light text-white text-[13px] sm:text-sm md:text-base leading-relaxed text-left">
+            <div className="mt-5 space-y-4 font-tthoves-light text-white text-[18px] leading-relaxed text-left">
               <p>
                 AYRA&apos;s engineering programs are supported by advanced
                 laboratories and digital infrastructure designed to provide
@@ -49,7 +49,7 @@ const EngineeringLabs = () => {
 
           <div className="order-1 md:order-2 min-h-[200px] sm:min-h-[280px] md:min-h-0">
             <Image
-              src="/school-of-engg-tech/btech/Engeneeringlabs.png"
+              src="/school-of-engg-tech/btech/Engeneeringlabs.webp"
               width={886}
               height={746}
               alt="Engineering labs and technology infrastructure"

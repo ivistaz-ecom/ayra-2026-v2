@@ -45,7 +45,7 @@ const ProgramHighlights = () => {
 
           <div>
             <Image
-              src="/school-of-engg-tech/btech/program-highlights.png"
+              src="/school-of-engg-tech/btech/program-highlights.webp"
               width={886}
               height={746}
               alt="B.Tech program highlights"

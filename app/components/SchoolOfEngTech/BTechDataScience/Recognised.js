@@ -22,7 +22,7 @@ const Recognised = () => {
               Credible.
             </h2>
 
-            <ul className="mt-6 space-y-4 text-black font-tthoves-light text-sm md:text-base max-w-xl mx-0 md:max-w-none">
+            <ul className="mt-6 space-y-4 text-black font-tthoves-light text-[18px] max-w-xl mx-0 md:max-w-none">
               {highlights.map((item) => (
                 <li key={item} className="flex items-start gap-2 text-left">
                   <Image

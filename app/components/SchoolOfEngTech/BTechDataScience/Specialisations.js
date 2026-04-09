@@ -17,7 +17,7 @@ const items = [
 const settings = {
   dots: false,
   infinite: true,
-  speed: 600,
+  speed: 1000,
   slidesToShow: 2,
   slidesToScroll: 1,
   autoplay: true,
@@ -45,7 +45,7 @@ const Specialisations = () => {
           Specialisation Focus Areas
         </h2>
 
-        <p className="mt-3 font-tthoves-light text-black text-sm md:text-base text-left max-w-[980px] mx-0">
+        <p className="mt-3 font-tthoves-light text-black text-[18px] text-left max-w-[980px] mx-0">
           Students gain expertise across key domains of modern data science,
           including:
         </p>

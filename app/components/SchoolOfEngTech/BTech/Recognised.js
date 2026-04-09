@@ -22,7 +22,7 @@ const Recognised = () => {
               Credible.
             </h2>
 
-            <ul className="mt-6 space-y-4 text-black font-tthoves-light text-sm md:text-base max-w-xl mx-0 md:max-w-none">
+            <ul className="mt-6 space-y-4 text-black font-tthoves-light text-[18px] max-w-xl mx-0 md:max-w-none">
               {highlights.map((item) => (
                 <li key={item} className="flex items-start gap-2 text-left">
                   <Image
@@ -40,11 +40,11 @@ const Recognised = () => {
 
           <div className="py-[5px]">
             <Image
-              src="/school-of-engg-tech/btech/recognized.png"
+              src="/school-of-engg-tech/btech/recognized.webp"
               width={886}
               height={746}
               alt="B.Tech programme recognition and accreditation"
-              className="w-full h-auto border border-[#4B8CE5]"
+              className="w-full h-auto"
             />
           </div>
         </div>

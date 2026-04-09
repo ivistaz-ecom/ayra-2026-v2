@@ -17,7 +17,7 @@ const EngineeringLabs = () => {
 
             <div className="mt-4 border-t border-dotted border-white/50" />
 
-            <div className="mt-5 space-y-4 font-tthoves-light text-white text-[13px] sm:text-sm md:text-base leading-relaxed text-left">
+            <div className="mt-5 space-y-4 font-tthoves-light text-white text-[18px] leading-relaxed text-left">
               <p>
                 AYRA&apos;s engineering programs are supported by advanced
                 laboratories and digital infrastructure designed to provide

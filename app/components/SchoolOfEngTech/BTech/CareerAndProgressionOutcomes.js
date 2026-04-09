@@ -59,7 +59,7 @@ const CareerAndProgressionOutcomes = () => {
               Progression Outcomes
             </h2>
 
-            <p className="mt-4 font-tthoves-light text-white/90 text-sm md:text-base leading-relaxed max-w-3xl mx-0">
+            <p className="mt-4 font-tthoves-light text-white/90 text-[18px] leading-relaxed max-w-3xl mx-0">
               Graduates of AYRA&apos;s B.Tech programs can pursue diverse career
               paths across the global technology ecosystem.
             </p>
@@ -89,7 +89,7 @@ const CareerAndProgressionOutcomes = () => {
                   {isOpen ? (
                     <div className="px-4 md:px-0 pb-4 sm:pb-5 md:pb-6">
                       {item.prefix ? (
-                        <p className="font-tthoves-light text-white/90 text-xs sm:text-sm md:text-base mb-3">
+                        <p className="font-tthoves-light text-white/90 text-[18px] mb-3">
                           {item.prefix}
                         </p>
                       ) : null}
@@ -100,11 +100,11 @@ const CareerAndProgressionOutcomes = () => {
                             className="flex items-start gap-2 font-tthoves-light text-white/90 text-xs sm:text-sm md:text-base leading-snug"
                           >
                             <Image
-                              src="/rocket-icon.svg"
+                              src="/school-of-engg-tech/btech/arrow1.svg"
                               width={14}
                               height={14}
                               alt="arrow icon"
-                              className="mt-0.5 h-3.5 w-3.5 shrink-0 rotate-45"
+                              className="mt-0.5 h-3.5 w-3.5 shrink-0"
                             />
                             <span>{line}</span>
                           </li>
@@ -117,7 +117,7 @@ const CareerAndProgressionOutcomes = () => {
             })}
 
             <div className="px-4 md:px-0 py-4 md:py-5 text-left">
-              <p className="font-tthoves-light text-white/85 text-sm md:text-base leading-relaxed max-w-3xl mx-0">
+              <p className="font-tthoves-light text-white/85 text-[18px] leading-relaxed max-w-3xl mx-0">
                 The program also provides a strong foundation for higher
                 studies, research, and specialised postgraduate programs.
               </p>

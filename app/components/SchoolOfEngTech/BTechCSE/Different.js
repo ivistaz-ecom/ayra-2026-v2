@@ -7,13 +7,13 @@ const Different = () => {
       <div className="container mx-auto px-4 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0">
           <div className="order-2 md:order-1 py-6 md:py-12 md:pr-10 lg:pr-14 text-left md:border-r md:border-dashed md:border-[#8E8E8E]">
-            <p className="font-tthoves-light text-black text-sm sm:text-base leading-relaxed max-w-[520px] mx-0">
+            <p className="font-tthoves-light text-black text-[18px] leading-relaxed max-w-[520px] mx-0">
               The Computer Science program at AYRA combines strong computing
               foundations with hands-on learning, industry engagement, and
               interdisciplinary exploration.
             </p>
 
-            <p className="font-tthoves-light text-black text-sm sm:text-base leading-relaxed mt-6 md:mt-8 max-w-[520px] mx-0">
+            <p className="font-tthoves-light text-black text-[18px] leading-relaxed mt-6 md:mt-8 max-w-[520px] mx-0">
               Students learn not only how computing systems function, but how to
               design software, build digital systems, and develop technology
               solutions that respond to real-world needs.
