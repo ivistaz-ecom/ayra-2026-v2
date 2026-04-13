@@ -36,7 +36,7 @@ const AnalyticsLearning = () => {
 
             <div className="relative min-h-[260px] sm:min-h-[320px] md:min-h-[400px] h-full">
               <Image
-                src="/school-of-engg-tech/btech/program-highlights.png"
+                src="/bba-programs/business-analytics/program-highlights.webp"
                 width={500}
                 height={500}
                 alt="Experiential learning and industry engagement"

@@ -8,7 +8,7 @@ const StartingYourJourney = () => {
         <div className="relative">
           {/* Swap images for mobile vs desktop */}
           <Image
-            src="/school-of-business/mba/Start-your-Journey-Desktop.webp"
+            src="/bba-programs/business-analytics/Start-your-Journey-Desktop.webp"
             width={1600}
             height={900}
             alt="Starting your journey at AYRA"
@@ -16,7 +16,7 @@ const StartingYourJourney = () => {
             priority
           />
           <Image
-            src="/school-of-business/mba/Start-your-Journey-Mobile.webp"
+            src="/bba-programs/business-analytics/Start-your-Journey-Mobile.webp"
             width={900}
             height={520}
             alt="Starting your journey at AYRA"
@@ -28,8 +28,8 @@ const StartingYourJourney = () => {
           <div className="absolute inset-0 flex md:hidden items-end justify-center px-5 pb-10">
             <div className="w-full text-left">
               <p className="font-tthoves-light text-white text-[15px] leading-snug">
-                Duration: 3 Years (Undergraduate Degree) or 4 Years (BBA
-                Honours option)
+                Duration: 3 Years (Undergraduate Degree) or 4 Years (BBA Honours
+                option)
               </p>
 
               <p className="mt-6 font-tthoves-light text-white text-[15px] leading-snug">
@@ -50,8 +50,8 @@ const StartingYourJourney = () => {
               <p className="mt-0 md:mt-1 font-tthoves-light text-[12px] sm:text-xs md:text-sm text-left">
                 Admissions & Eligibility
                 <br />
-                Duration: 3 Years (Undergraduate Degree) or 4 Years (BBA
-                Honours option)
+                Duration: 3 Years (Undergraduate Degree) or 4 Years (BBA Honours
+                option)
               </p>
 
               <h3 className="mt-3 font-tthoves-bold text-[12px] sm:text-xs md:text-sm text-left">
@@ -67,8 +67,9 @@ const StartingYourJourney = () => {
                     className="mt-1 h-3.5 w-3.5 shrink-0"
                   />
                   <span>
-                  The candidate must have successfully completed 10+2 (Higher
-                  Secondary) or equivalent examination from a recognized board.
+                    The candidate must have successfully completed 10+2 (Higher
+                    Secondary) or equivalent examination from a recognized
+                    board.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -80,7 +81,7 @@ const StartingYourJourney = () => {
                     className="mt-1 h-3.5 w-3.5 shrink-0"
                   />
                   <span>
-                  Students from any academic stream are eligible to apply.
+                    Students from any academic stream are eligible to apply.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -92,8 +93,8 @@ const StartingYourJourney = () => {
                     className="mt-1 h-3.5 w-3.5 shrink-0"
                   />
                   <span>
-                  Candidates with an interest in business analysis, data
-                  interpretation, and decision-making may be given preference.
+                    Candidates with an interest in business analysis, data
+                    interpretation, and decision-making may be given preference.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -105,9 +106,9 @@ const StartingYourJourney = () => {
                     className="mt-1 h-3.5 w-3.5 shrink-0"
                   />
                   <span>
-                  In case of SC/ST/OBC/Category I candidates, a relaxation of
-                  5% in the aggregate marks obtained in the qualifying
-                  examination may be considered as per applicable regulations.
+                    In case of SC/ST/OBC/Category I candidates, a relaxation of
+                    5% in the aggregate marks obtained in the qualifying
+                    examination may be considered as per applicable regulations.
                   </span>
                 </li>
               </ul>
