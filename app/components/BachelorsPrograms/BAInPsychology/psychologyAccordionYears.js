@@ -1,0 +1,103 @@
+export const PSYCHOLOGY_ACCORDION_YEARS = [
+  {
+    yearLabel: "YEAR 1",
+    phaseLabel: "DESIGN",
+    phaseNote: "(Design your learning path)",
+    semesters: [
+      [
+        "Introduction to Psychology",
+        "Biological Bases for Behavior",
+        "Human Development Across the Lifespan",
+        "Modern Indian Language - I (Functional Kannada / Hindi)",
+        "Digital Skills for Behavioral Sciences",
+        "Mindfulness and Emotional Intelligence Lab",
+        "Indian Knowledge System - 1 (Yoga and Meditation)",
+        "Sports and Wellness - 1",
+        "Multi-Disciplinary Course",
+      ],
+      [
+        "Social Psychology",
+        "Cognitive Psychology",
+        "Theories of Personality",
+        "Modern Indian Language 2 (Functional Kannada/Hindi)",
+        "Writing and Documentation for Social Sciences",
+        "Indian Knowledge System - 2 (Indian Constitution & Ethics)",
+        "Sports and Wellness - 2",
+        "Self Defense for Life",
+        "Multi-Disciplinary Course",
+      ],
+    ],
+  },
+  {
+    yearLabel: "YEAR 2",
+    phaseLabel: "EXPLORE",
+    phaseNote: "(Go beyond boundaries. Dive deeper. Learn by doing!)",
+    semesters: [
+      [
+        "Psychological Statistics",
+        "Psychological Research Methods - I",
+        "Psychological Assessment and Testing",
+        "Applied Positive Psychology",
+        "Counselling Skills Lab",
+        "Indian Knowledge System - 3 (Domain Specific)",
+        "Sports & Wellness - 3",
+        "Multi-Disciplinary Course",
+        "Organization Study",
+      ],
+      [
+        "Psychological Research Methods - II",
+        "Psychology of Learning and Motivation",
+        "Abnormal Psychology",
+        "Introduction to Psychotherapy and Clinical Interventions",
+        "Ethics in Psychological Practice",
+        "Applied Psychological Testing and Profiling",
+        "Inner Compass",
+        "Sports & Wellness - 4",
+      ],
+    ],
+  },
+  {
+    yearLabel: "YEAR 3",
+    phaseLabel: "EMBRACE",
+    phaseNote:
+      "(Own your journey. Embrace leadership, step into your purpose!)",
+    semesters: [
+      [
+        "Organizational Psychology",
+        "Educational Psychology",
+        "Forensic Psychology / Gender and Mental Health",
+        "Sports and Performance Psychology / Psychology of Media and Technology",
+        "Psychoeducation and School Psychology / Workplace Well-being and HR Analytics",
+        "Public Speaking and Networking",
+        "Sports and Wellness 5",
+      ],
+      [
+        "Counselling Theories and Techniques",
+        "Consumer Psychology / Narrative Psychology and Expressive Arts Therapy",
+        "Aptitude & Interview Skills",
+        "Sports & Wellness - 6",
+        "Internship / Dissertation",
+      ],
+    ],
+  },
+  {
+    yearLabel: "YEAR 4",
+    phaseLabel: "ELEVATE",
+    phaseNote: "(Rise to Mastery)",
+    semesters: [
+      [
+        "Health Psychology",
+        "Psychology and Society",
+        "Advanced Psychological Assessment and Intervention",
+        "Neuropsychology / Psychological Entrepreneurship and Innovation",
+        "Therapeutic Storytelling and Expressive Techniques",
+        "Field Study/Minor Project/Ideation Pitch",
+      ],
+      [
+        "Indian Psychology and Indigenous Perspectives",
+        "Contemporary Issues in Mental Health / Trauma Psychology and Crisis Intervention",
+        "Dissertation Project / Entrepreneurial Venture Incubation / Business Research Project / Internship with Research",
+      ],
+    ],
+  },
+]

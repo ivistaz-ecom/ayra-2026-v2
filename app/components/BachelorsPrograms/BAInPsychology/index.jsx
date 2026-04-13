@@ -1,6 +1,5 @@
 import React from "react"
 import HeroBanner from "./HeroBanner"
-import Description from "./Description"
 import Recognised from "./Recognised"
 import Different from "./Different"
 import Scrolling from "./Scrolling"
@@ -14,13 +13,20 @@ import PsychologyLab from "./PsychologyLab"
 import ValueAdded from "./ValueAdded"
 import CareerAndProgressionOutcomes from "./CareerAndProgressionOutcomes"
 import StartingYourJourney from "./StartingYourJourney"
-import Ayraadapt from "./Ayraadapt"
+import ProgramDescriptionSection from "../../ProgramsShared/ProgramDescriptionSection"
+import ProgramNotSureWhereToBegin from "../../ProgramsShared/ProgramNotSureWhereToBegin"
+
+const DESCRIPTION_PARAGRAPHS = [
+  "The B.A. in Psychology program at AYRA begins with understanding, not just of others, but of yourself.",
+  "You explore how people think, feel, behave, and interact within different social and cultural contexts. As you learn about human behaviour, cognition, and emotions, you also begin to reflect on your own perspectives, responses, and patterns.",
+  "The program is offered as a three-year undergraduate degree, with the option to pursue a fourth-year B.A. (Honours) for students interested in advanced study, research, or professional pathways.",
+]
 
 const BBAHospitalityManagement = () => {
   return (
     <>
       <HeroBanner />
-      <Description />
+      <ProgramDescriptionSection paragraphs={DESCRIPTION_PARAGRAPHS} />
       <Recognised />
       <Different />
       <Scrolling />
@@ -34,7 +40,11 @@ const BBAHospitalityManagement = () => {
       <ValueAdded />
       <CareerAndProgressionOutcomes />
       <StartingYourJourney />
-      <Ayraadapt />
+      <ProgramNotSureWhereToBegin
+        imageSrc="/bba-programs/ba-in-psychology/Not-sure-where-to-begin.webp"
+        heading="Give us five minutes on a call."
+        paragraph="Speak with the admissions team, explore your options, and see what could fit you best."
+      />
     </>
   )
 }

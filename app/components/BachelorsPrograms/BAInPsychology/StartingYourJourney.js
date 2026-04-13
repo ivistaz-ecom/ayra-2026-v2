@@ -8,7 +8,7 @@ const StartingYourJourney = () => {
         <div className="relative">
           {/* Swap images for mobile vs desktop */}
           <Image
-            src="/bba-programs/ba-in-psychology/start-journey.png"
+            src="/bba-programs/ba-in-psychology/start-journey.webp"
             width={1600}
             height={900}
             alt="Starting your journey at AYRA"
@@ -16,7 +16,7 @@ const StartingYourJourney = () => {
             priority
           />
           <Image
-            src="/bba-programs/ba-in-psychology/start-journey-mobile.png"
+            src="/bba-programs/ba-in-psychology/start-journey-mobile.webp"
             width={900}
             height={520}
             alt="Starting your journey at AYRA"

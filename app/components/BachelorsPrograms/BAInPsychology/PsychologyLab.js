@@ -8,7 +8,7 @@ const PsychologyLab = () => {
         <div className="relative overflow-hidden min-h-[520px] sm:min-h-[620px] md:min-h-[700px]">
           <div className="absolute inset-0 hidden md:block ">
             <Image
-              src="/bba-programs/ba-in-psychology/psychology-lab.png"
+              src="/bba-programs/ba-in-psychology/psychology-lab.webp"
               width={886}
               height={746}
               alt="Experimental learning at AYRA MBA"
@@ -17,7 +17,7 @@ const PsychologyLab = () => {
           </div>
           <div className="absolute inset-0 block md:hidden">
             <Image
-              src="/bba-programs/ba-in-psychology/psychology-lab-mobile.png"
+              src="/bba-programs/ba-in-psychology/psychology-lab-mobile.webp"
               width={800}
               height={1000}
               alt="Experimental learning at AYRA MBA"

@@ -1,0 +1,103 @@
+export const BBA_BUSINESS_ANALYTICS_ACCORDION_YEARS = [
+  {
+    yearLabel: "YEAR 1",
+    phaseLabel: "DESIGN",
+    phaseNote: "(Design your learning path)",
+    semesters: [
+      [
+        "Management Perspectives",
+        "Accounting for Business",
+        "Principles of Micro-Economics",
+        "Modern Indian Language 1 (Functional Kannada/Hindi)",
+        "MS Office Tools",
+        "Communication/Soft skills (Behavioral & language neutral)",
+        "Indian Knowledge System - 1 (Yoga and Meditation)",
+        "Sports & Wellness - 1",
+        "Multidisciplinary Course",
+      ],
+      [
+        "Behavioural Dynamics",
+        "Marketing Fundamentals",
+        "Statistics for Business",
+        "Modern Indian Language 2 (Functional Kannada/Hindi)",
+        "Presentation Skills",
+        "Indian Knowledge System - 2 (Indian Constitution & Ethics)",
+        "Sports & Wellness - 2",
+        "Multidisciplinary Course",
+        "Self Defense for Life",
+      ],
+    ],
+  },
+  {
+    yearLabel: "YEAR 2",
+    phaseLabel: "EXPLORE",
+    phaseNote: "(Go beyond boundaries. Dive deeper. Learn by doing!)",
+    semesters: [
+      [
+        "People Management",
+        "Digital Business Models",
+        "Data Visualization using Tableau & Power BI",
+        "Predictive Analytics using Python",
+        "DSS - MS Excel",
+        "Indian Knowledge System - 3 (Domain Specific)",
+        "Sports & Wellness - 3",
+        "Multidisciplinary Course",
+        "Organization Study",
+      ],
+      [
+        "Production & Operations Management",
+        "Building Blocks of Entrepreneurship",
+        "Corporate Accounting",
+        "Business Intelligence and Data Mining",
+        "Machine Learning for Business Applications",
+        "Event Management",
+        "Inner Compass",
+        "Sports & Wellness - 4",
+      ],
+    ],
+  },
+  {
+    yearLabel: "YEAR 3",
+    phaseLabel: "EMBRACE",
+    phaseNote:
+      "(Own your journey. Embrace leadership, step into your purpose!)",
+    semesters: [
+      [
+        "Business Research Methods",
+        "Environmental Science and Sustainability projects",
+        "R for Statistical Computing / AI in Business",
+        "Big Data Analytics / Digital Business Analytics",
+        "Data Privacy, Security & Ethics / Cloud-based Analytics Platforms",
+        "Public Speaking and Networking",
+        "Sports & Wellness - 5",
+      ],
+      [
+        "Business Law",
+        "Internship/Dissertation",
+        "Sports Performance Analytics / Blockchain in Business Analytics",
+        "Aptitude and Interview skills",
+        "Sports & Wellness - 6",
+      ],
+    ],
+  },
+  {
+    yearLabel: "YEAR 4",
+    phaseLabel: "ELEVATE",
+    phaseNote: "(Rise to Mastery)",
+    semesters: [
+      [
+        "Strategic Management and Corporate Governance",
+        "Qualitative and Quantitative Research Methods",
+        "Marketing Analytics / Retail Analytics",
+        "Financial Analytics / Financial Risk Analytics",
+        "Field Study/Minor Project/Ideation Pitch",
+        "Strategic Innovation through Design Thinking",
+      ],
+      [
+        "Global Business Environment and Emerging Markets",
+        "HR Analytics / Supply Chain Analytics",
+        "Dissertation Project / Entrepreneurial Venture Incubation / Business Research Project / Internship with Research",
+      ],
+    ],
+  },
+]
