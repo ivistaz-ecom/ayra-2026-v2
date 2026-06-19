@@ -16,7 +16,7 @@ export default function ProgramHighlights() {
     <ProgramHighlightsSection
       headingColor="#FF4D48"
       points={POINTS}
-      imageSrc="/school-of-engg-tech/bba-general/img1.webp"
+      imageSrc="/bba-programs/ba-in-psychology/recognized.webp"
       imageAlt="Psychology program highlights"
     />
   )
